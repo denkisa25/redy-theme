@@ -1,0 +1,23 @@
+:root {
+  /* Redy brand color tokens */
+  --redy-red:       #C8102E;
+  --redy-red-deep:  #9B0E22;
+  --redy-pink:      #FF8FB5;
+  --redy-pink-soft: #FFE4ED;
+  --redy-blush:     #FBE9EC;
+  --redy-cream:     #FFF5EE;
+  --redy-peach:     #F5B384;
+  --redy-lavender:  #B5A4D4;
+  --redy-ink:       #2A1418;
+  --redy-charcoal:  #4A2A30;
+
+  /* Font family aliases for use in custom sections */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'DM Sans', -apple-system, sans-serif;
+  --font-script:  'Caveat', cursive;
+
+  /* Override Ella's font family variables to use Redy fonts */
+  --font-body--family:       'DM Sans', -apple-system, sans-serif;
+  --font-heading--family:    'Fraunces', Georgia, serif;
+  --font-subheading--family: 'DM Sans', -apple-system, sans-serif;
+}
