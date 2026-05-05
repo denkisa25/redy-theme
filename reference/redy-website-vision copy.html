@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>redy.one — Когато моментът дойде, тя е Redy.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --redy-red: #C8102E;
+    --redy-red-deep: #9B0E22;
+    --redy-pink: #FF8FB5;
+    --redy-pink-soft: #FFE4ED;
+    --redy-blush: #FBE9EC;
+    --redy-cream: #FFF5EE;
+    --redy-peach: #F5B384;
+    --redy-lavender: #B5A4D4;
+    --redy-ink: #2A1418;
+    --redy-charcoal: #4A2A30;
+
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --font-script: 'Caveat', cursive;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--redy-ink);
+    background: var(--redy-cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255, 245, 238, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(42, 20, 24, 0.06);
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav-mark {
+    width: 44px; height: 44px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .nav-mark::after {
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 4px; right: 3px;
+  }
+  .nav-mark span {
+    font-family: var(--font-script);
+    font-size: 22px;
+    color: var(--redy-red);
+    font-weight: 700;
+    transform: rotate(-3deg);
+    line-height: 1;
+  }
+  .nav-domain {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--redy-ink);
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--redy-ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--redy-red); }
+
+  .nav-cta {
+    background: var(--redy-red);
+    color: var(--redy-cream);
+    padding: 10px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--redy-red-deep); transform: translateY(-1px); }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 100vh;
+    background: var(--redy-pink-soft);
+    position: relative;
+    overflow: hidden;
+    padding: 140px 48px 80px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hb1 { width: 220px; height: 260px; background: var(--redy-red); top: 10%; left: -5%; transform: rotate(-15deg); opacity: 0.95; }
+  .hb2 { width: 100px; height: 130px; background: var(--redy-red); top: 28%; left: 8%; transform: rotate(20deg); }
+  .hb3 { width: 80px; height: 100px; background: var(--redy-peach); top: 65%; left: 4%; }
+  .hb4 { width: 70px; height: 85px; background: var(--redy-lavender); top: 80%; left: 14%; }
+  .hb5 { width: 280px; height: 280px; background: var(--redy-pink); bottom: -8%; right: -8%; transform: rotate(-10deg); }
+  .hb6 { width: 160px; height: 200px; background: var(--redy-red); bottom: 8%; right: 20%; }
+  .hb7 { width: 90px; height: 110px; background: var(--redy-red); top: 18%; right: 35%; transform: rotate(15deg); }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: var(--redy-red);
+    margin-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7vw, 96px);
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    color: var(--redy-ink);
+    margin-bottom: 32px;
+  }
+  h1.hero-title em {
+    font-style: italic;
+    color: var(--redy-red);
+    font-weight: 400;
+  }
+  h1.hero-title .script-word {
+    font-family: var(--font-script);
+    color: var(--redy-red);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1em;
+  }
+
+  .hero-lead {
+    font-size: 19px;
+    color: var(--redy-charcoal);
+    max-width: 480px;
+    margin-bottom: 40px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--redy-red);
+    color: var(--redy-cream);
+    padding: 16px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--redy-red-deep); transform: translateY(-2px); box-shadow: 0 12px 24px rgba(200, 16, 46, 0.2); }
+  .btn-primary .arrow { transition: transform 0.2s; }
+  .btn-primary:hover .arrow { transform: translateX(4px); }
+
+  .btn-ghost {
+    color: var(--redy-ink);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1.5px solid var(--redy-ink);
+    padding-bottom: 4px;
+    transition: all 0.2s;
+  }
+  .btn-ghost:hover { color: var(--redy-red); border-color: var(--redy-red); }
+
+  .hero-trust {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--redy-charcoal);
+  }
+  .trust-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--redy-red);
+  }
+  .trust-dot.peach { background: var(--redy-peach); }
+  .trust-dot.lav { background: var(--redy-lavender); }
+
+  /* ============ HERO PRODUCT ============ */
+  .hero-product {
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 4/5;
+    background: white;
+    border-radius: 32px;
+    padding: 48px;
+    box-shadow: 0 40px 80px -20px rgba(200, 16, 46, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .hero-product::before {
+    content: '';
+    position: absolute;
+    width: 200px; height: 240px;
+    background: var(--redy-pink-soft);
+    border-radius: 50%;
+    top: -60px; right: -60px;
+    transform: rotate(-15deg);
+  }
+  .product-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--redy-red);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  .product-name {
+    font-family: var(--font-display);
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
+  }
+  .product-name em { font-style: italic; color: var(--redy-red); }
+
+  .product-visual {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .product-box {
+    width: 70%;
+    aspect-ratio: 1;
+    background: var(--redy-pink-soft);
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0 20px 40px -10px rgba(200, 16, 46, 0.15);
+  }
+  .product-box::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 2px dashed var(--redy-red);
+    border-radius: 16px;
+    opacity: 0.3;
+  }
+  .product-mark {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px; height: 90px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .product-mark::after {
+    content: '';
+    position: absolute;
+    width: 9px; height: 9px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 8px; right: 5px;
+  }
+  .product-mark span {
+    font-family: var(--font-script);
+    font-size: 38px;
+    color: var(--redy-red);
+    font-weight: 700;
+    transform: rotate(-3deg);
+  }
+
+  .product-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+  .product-price {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--redy-ink);
+  }
+  .product-price small { font-size: 16px; opacity: 0.6; }
+  .product-meta {
+    text-align: right;
+    font-size: 13px;
+    color: var(--redy-charcoal);
+    line-height: 1.4;
+  }
+
+  /* ============ STATEMENT ============ */
+  .statement {
+    background: var(--redy-cream);
+    padding: 160px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .statement-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .sb1 { width: 100px; height: 130px; background: var(--redy-pink); top: 20%; left: 10%; opacity: 0.6; }
+  .sb2 { width: 80px; height: 100px; background: var(--redy-peach); top: 30%; right: 15%; opacity: 0.7; }
+  .sb3 { width: 70px; height: 90px; background: var(--redy-lavender); bottom: 20%; left: 18%; opacity: 0.6; }
+  .sb4 { width: 90px; height: 110px; background: var(--redy-red); bottom: 25%; right: 10%; }
+  .statement-quote {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--redy-ink);
+    position: relative;
+    z-index: 2;
+  }
+  .statement-quote em { font-style: italic; color: var(--redy-red); font-weight: 400; }
+  .statement-attr {
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--redy-charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ============ INSIDE BOX ============ */
+  .inside {
+    background: white;
+    padding: 140px 48px;
+    position: relative;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .section-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: end;
+    margin-bottom: 80px;
+  }
+  .section-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--redy-red);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .section-h2 {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 5vw, 72px);
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+  .section-h2 em { font-style: italic; color: var(--redy-red); font-weight: 400; }
+  .section-sub { font-size: 17px; color: var(--redy-charcoal); line-height: 1.55; }
+
+  .inside-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .inside-card {
+    background: var(--redy-pink-soft);
+    border-radius: 28px;
+    padding: 40px 32px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .inside-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px -16px rgba(200, 16, 46, 0.2);
+  }
+  .inside-card.feat {
+    grid-column: span 2;
+    background: var(--redy-red);
+    color: var(--redy-cream);
+  }
+  .inside-card.dark {
+    background: var(--redy-ink);
+    color: var(--redy-cream);
+  }
+  .inside-card.cream { background: var(--redy-cream); }
+  .inside-card.peach { background: #F5D7B6; }
+  .inside-card.lavender { background: #DDD4EC; }
+
+  .card-num {
+    font-family: var(--font-display);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+    opacity: 0.7;
+  }
+  .inside-card h3 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+  .inside-card.feat h3 { font-size: 44px; }
+  .inside-card.feat h3 em { font-style: italic; color: var(--redy-pink); }
+  .inside-card p { font-size: 15px; line-height: 1.55; opacity: 0.85; }
+
+  .card-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .inside-card .card-blob {
+    width: 100px; height: 120px;
+    bottom: -30px; right: -30px;
+    background: var(--redy-red);
+    opacity: 0.15;
+  }
+  .inside-card.feat .card-blob {
+    background: var(--redy-red-deep);
+    width: 200px; height: 220px;
+    opacity: 0.5;
+  }
+
+  /* ============ STORY ============ */
+  .story {
+    background: var(--redy-pink-soft);
+    padding: 140px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .story-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .story-img {
+    aspect-ratio: 4/5;
+    background: var(--redy-cream);
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .story-img::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 12%; right: 8%;
+    opacity: 0.9;
+    transform: rotate(-15deg);
+  }
+  .story-img::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    bottom: 15%; left: 12%;
+    transform: rotate(20deg);
+  }
+  .story-img-text {
+    position: relative;
+    z-index: 3;
+    font-family: var(--font-script);
+    font-size: 96px;
+    color: var(--redy-cream);
+    transform: rotate(-5deg);
+    text-align: center;
+  }
+
+  .story-text h2 {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+  }
+  .story-text h2 em { font-style: italic; color: var(--redy-red); font-weight: 400; }
+  .story-text p {
+    font-size: 17px;
+    color: var(--redy-charcoal);
+    margin-bottom: 24px;
+    line-height: 1.65;
+  }
+  .story-sig {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(42, 20, 24, 0.1);
+  }
+  .sig-script {
+    font-family: var(--font-script);
+    font-size: 36px;
+    color: var(--redy-red);
+    transform: rotate(-3deg);
+  }
+  .sig-info {
+    font-size: 13px;
+    color: var(--redy-charcoal);
+  }
+  .sig-info strong { display: block; color: var(--redy-ink); font-size: 15px; font-family: var(--font-display); font-weight: 500; }
+
+  /* ============ FAQ ============ */
+  .faq {
+    background: white;
+    padding: 140px 48px;
+  }
+  .faq-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .faq-list { border-top: 1px solid rgba(42, 20, 24, 0.08); }
+  .faq-item {
+    border-bottom: 1px solid rgba(42, 20, 24, 0.08);
+    padding: 24px 0;
+    cursor: pointer;
+  }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--redy-ink);
+  }
+  .faq-toggle {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--redy-pink-soft);
+    color: var(--redy-red);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-toggle { background: var(--redy-red); color: white; transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: var(--redy-charcoal);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .faq-item.open .faq-a {
+    max-height: 200px;
+    padding-top: 16px;
+  }
+
+  /* ============ CTA FINAL ============ */
+  .cta-final {
+    background: var(--redy-ink);
+    color: var(--redy-cream);
+    padding: 160px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .cb1 { width: 280px; height: 280px; background: var(--redy-red); top: -80px; left: -80px; opacity: 0.7; }
+  .cb2 { width: 200px; height: 200px; background: var(--redy-pink); bottom: -60px; right: -40px; opacity: 0.6; }
+  .cb3 { width: 100px; height: 130px; background: var(--redy-peach); top: 30%; right: 18%; opacity: 0.4; }
+
+  .cta-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+  .cta-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    margin-bottom: 32px;
+  }
+  .cta-content h2 em { font-style: italic; color: var(--redy-pink); font-weight: 400; }
+  .cta-content p { font-size: 18px; opacity: 0.85; margin-bottom: 40px; }
+
+  .btn-light {
+    background: var(--redy-cream);
+    color: var(--redy-ink);
+    padding: 18px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+  }
+  .btn-light:hover { transform: translateY(-2px); background: white; }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--redy-cream);
+    padding: 80px 48px 32px;
+    border-top: 1px solid rgba(42, 20, 24, 0.08);
+  }
+  .footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .footer-brand .nav-mark { width: 56px; height: 56px; }
+  .footer-brand .nav-mark span { font-size: 28px; }
+  .footer-brand .nav-mark::after { width: 6px; height: 6px; }
+  .footer-brand p { margin-top: 20px; font-size: 14px; color: var(--redy-charcoal); max-width: 280px; line-height: 1.55; }
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--redy-red);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 10px; }
+  .footer-col a { color: var(--redy-ink); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--redy-red); }
+
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 32px;
+    border-top: 1px solid rgba(42, 20, 24, 0.08);
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--redy-charcoal);
+  }
+
+  @media (max-width: 968px) {
+    .nav-links { display: none; }
+    nav { padding: 12px 24px; }
+    .hero { grid-template-columns: 1fr; padding: 110px 24px 60px; }
+    .hero-product { max-width: 400px; margin: 0 auto; }
+    .section-head { grid-template-columns: 1fr; gap: 24px; }
+    .inside-grid { grid-template-columns: 1fr; }
+    .inside-card.feat { grid-column: span 1; }
+    .story-grid { grid-template-columns: 1fr; gap: 48px; }
+    .faq-grid { grid-template-columns: 1fr; gap: 48px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .inside, .story, .faq { padding: 100px 24px; }
+    .statement { padding: 100px 24px; }
+    .cta-final { padding: 120px 24px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-mark"><span>Redy</span></div>
+    <span class="nav-domain">redy.one</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#inside">Какво е вътре</a></li>
+    <li><a href="#story">Нашата история</a></li>
+    <li><a href="#faq">За родители</a></li>
+    <li><a href="#faq">За момичета</a></li>
+  </ul>
+  <a href="#order" class="nav-cta">Поръчай кутия</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-blob hb1"></div>
+  <div class="hero-blob hb2"></div>
+  <div class="hero-blob hb3"></div>
+  <div class="hero-blob hb4"></div>
+  <div class="hero-blob hb5"></div>
+  <div class="hero-blob hb6"></div>
+  <div class="hero-blob hb7"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Първа серия · От майка за майки</div>
+    <h1 class="hero-title">Когато моментът дойде,<br/><em>тя е</em> <span class="script-word">Redy.</span></h1>
+    <p class="hero-lead">Първата кутия за първия цикъл — внимателно подбрана, нежно обяснена, спокойно поднесена. За да започне разговорът, който ще я води дълго след това.</p>
+
+    <div class="hero-actions">
+      <a href="#order" class="btn-primary">Поръчай за 49 лв<span class="arrow">→</span></a>
+      <a href="#story" class="btn-ghost">Защо я създадох</a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item"><span class="trust-dot"></span>Био конопени превръзки</div>
+      <div class="trust-item"><span class="trust-dot peach"></span>Безплатна доставка над 60 лв</div>
+      <div class="trust-item"><span class="trust-dot lav"></span>Купи една — даряваш една</div>
+    </div>
+  </div>
+
+  <div class="hero-product">
+    <div>
+      <div class="product-tag">Серия 01 · Limited</div>
+      <div class="product-name">Първата<br/><em>кутия</em></div>
+    </div>
+    <div class="product-visual">
+      <div class="product-box">
+        <div class="product-mark"><span>Redy</span></div>
+      </div>
+    </div>
+    <div class="product-foot">
+      <div class="product-price">49 <small>лв</small></div>
+      <div class="product-meta">Ръчно опакована<br/>в София</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="statement">
+  <div class="statement-blob sb1"></div>
+  <div class="statement-blob sb2"></div>
+  <div class="statement-blob sb3"></div>
+  <div class="statement-blob sb4"></div>
+  <p class="statement-quote">
+    Първата менструация не е просто<br/>биологично събитие. Тя е <em>момент,</em><br/>който остава в паметта за години.
+  </p>
+  <div class="statement-attr">— Защо Redy съществува</div>
+</section>
+
+<!-- ============ INSIDE THE BOX ============ -->
+<section class="inside" id="inside">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Какво има вътре</div>
+        <h2 class="section-h2">Всичко, което трябва.<br/>Нищо, което плаши.</h2>
+      </div>
+      <p class="section-sub">Кутията е малка вселена от грижа — практичните неща са там, но емоционалните също. Защото тя ще има нужда и от двете.</p>
+    </div>
+
+    <div class="inside-grid">
+      <div class="inside-card feat">
+        <div class="card-num">01 / Сърцевината</div>
+        <h3>Брошура „Когато <em>тялото ти</em> пораства"</h3>
+        <p>Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.</p>
+        <div class="card-blob"></div>
+      </div>
+      <div class="inside-card">
+        <div class="card-num">02</div>
+        <h3>Био превръзки</h3>
+        <p>Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.</p>
+        <div class="card-blob"></div>
+      </div>
+
+      <div class="inside-card cream">
+        <div class="card-num">03</div>
+        <h3>Несесер</h3>
+        <p>Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.</p>
+        <div class="card-blob"></div>
+      </div>
+      <div class="inside-card peach">
+        <div class="card-num">04</div>
+        <h3>Картичка</h3>
+        <p>„Ти си Redy." Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.</p>
+        <div class="card-blob"></div>
+      </div>
+      <div class="inside-card lavender">
+        <div class="card-num">05</div>
+        <h3>Топъл чай</h3>
+        <p>Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.</p>
+        <div class="card-blob"></div>
+      </div>
+
+      <div class="inside-card dark">
+        <div class="card-num">06 / Бонус</div>
+        <h3>Наръчник за родителя</h3>
+        <p>Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.</p>
+        <div class="card-blob"></div>
+      </div>
+      <div class="inside-card">
+        <div class="card-num">07</div>
+        <h3>QR код към ресурси</h3>
+        <p>Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.</p>
+        <div class="card-blob"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="story-grid">
+    <div class="story-img">
+      <div class="story-img-text">от майка<br/>за майки</div>
+    </div>
+    <div class="story-text">
+      <div class="section-tag">Защо Redy</div>
+      <h2>Скоро дъщеря ми ще има <em>първия си цикъл.</em><br/>Започнах с кутия за нея.<br/>Превърна се в кутия <em>за нашите дъщери.</em></h2>
+      <p>Когато започнах да се подготвям за този разговор, осъзнах нещо — не се страхувам от темата. Страхувам се да не я направя по-голяма, отколкото е.</p>
+      <p>Поколения преди нас го получаваха като шепот в кухнята. Като нещо, което се крие в чантата. Като „тайна". Не искам това за дъщеря ми. Не искам това за никое момиче.</p>
+      <p>Redy не е активизъм. Redy е спокойствие. Първата кутия е за нея — но и за нас, майките, които искаме разговорът да започне правилно.</p>
+      <div class="story-sig">
+        <div class="sig-script">Анна</div>
+        <div class="sig-info">
+          <strong>Анна Г.</strong>
+          основател на Redy · майка на Виктория
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="faq-grid">
+    <div>
+      <div class="section-tag">Често</div>
+      <h2 class="section-h2">Въпроси,<br/>които <em>чувам най-често.</em></h2>
+      <p style="margin-top: 24px; color: var(--redy-charcoal); font-size: 16px;">Ако твоят го няма тук — пиши ми лично на <a href="mailto:hi@redy.one" style="color: var(--redy-red);">hi@redy.one</a>.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q">На каква възраст е подходяща кутията?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">За момичета между 9 и 13 години — но няма правило. Подаряваме я около 9–10 г. възраст, за да е готова преди да я изненада. Тонът е премерен — не плаши малките, не звучи детски на по-големите.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Подходяща ли е, ако тя още няма цикъл?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Точно затова е създадена. Кутията се отваря преди първата менструация — за подготовка. Така моментът, когато дойде, не е изненада, а нещо познато.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Защо био превръзки?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Конопените био превръзки нямат хлор, аромати и синтетични влакна. Дишат. По-добри са за чувствителна кожа и за околната среда. Първото докосване с този продукт има значение.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Какво включва моделът „купи една — даряваш една"?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">За всяка продадена кутия даряваме една на момиче без достъп — чрез партньорства с училища и социални служби. Прозрачен брой, ежемесечен отчет на сайта.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Доставка и връщане?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Доставка с Еконт за 1–2 работни дни в цяла България. Безплатна над 60 лв. Връщане в 14 дни, ако кутията е неразопакована.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Може ли подарък за рожден ден / кръщелница?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Да — много майки и кръстници избират Redy точно за такъв повод. Имаме опция за лично послание на картичката.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="cta-final" id="order">
+  <div class="cta-blob cb1"></div>
+  <div class="cta-blob cb2"></div>
+  <div class="cta-blob cb3"></div>
+  <div class="cta-content">
+    <h2>Бъди готова<br/>преди тя да е <em>готова.</em></h2>
+    <p>Първа серия — 50 кутии, ръчно опаковани в София. Поръчай сега и получи безплатно лично писмо с името на дъщеря ти.</p>
+    <a href="#" class="btn-light" onclick="alert('Поръчай за 49 лв · демо');return false;">Поръчай първата кутия — 49 лв<span>→</span></a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-mark"><span>Redy</span></div>
+      <p>Първият внимателно подбран менструален комплект — създаден от майка за майки. Sofia, Bulgaria.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Продукт</h4>
+      <ul>
+        <li><a href="#">Първата кутия</a></li>
+        <li><a href="#">Какво е вътре</a></li>
+        <li><a href="#">За училища</a></li>
+        <li><a href="#">За корпоративни</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ресурси</h4>
+      <ul>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Брошури PDF</a></li>
+        <li><a href="#">Често задавани въпроси</a></li>
+        <li><a href="#">За родители</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакт</h4>
+      <ul>
+        <li><a href="mailto:hi@redy.one">hi@redy.one</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Redy. Made with care in Sofia.</span>
+    <span>Условия · Поверителност · Доставка</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => item.classList.toggle('open'));
+  });
+</script>
+
+</body>
+</html>

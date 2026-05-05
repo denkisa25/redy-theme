@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Redy — Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Primary palette — derived from logo + brochure */
+    --redy-red: #C8102E;          /* Дълбоко червено — primary */
+    --redy-red-deep: #9B0E22;     /* Тъмно червено — accent */
+    --redy-pink: #FF8FB5;         /* Светло розово — logo bubble */
+    --redy-pink-soft: #FFE4ED;    /* Пастелно розово — backgrounds */
+    --redy-blush: #FBE9EC;        /* Бледо blush — extra soft */
+    --redy-cream: #FFF5EE;        /* Топъл беж — neutral background */
+    --redy-peach: #F5B384;        /* Праскова — accent (от брошурата) */
+    --redy-lavender: #B5A4D4;     /* Лилаво — symbol of femininity */
+    --redy-ink: #2A1418;          /* Дълбоко мастилено — typography */
+    --redy-charcoal: #4A2A30;     /* Текст secondary */
+
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --font-script: 'Caveat', cursive;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--redy-ink);
+    background: var(--redy-cream);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============ COVER ============ */
+  .cover {
+    min-height: 100vh;
+    background: var(--redy-pink-soft);
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 40px;
+  }
+
+  .cover-blob {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .cover-blob.b1 { width: 180px; height: 220px; background: var(--redy-red); top: 8%; left: 6%; transform: rotate(-15deg); }
+  .cover-blob.b2 { width: 90px; height: 110px; background: var(--redy-red); top: 22%; left: 18%; transform: rotate(20deg); }
+  .cover-blob.b3 { width: 220px; height: 220px; background: var(--redy-pink); bottom: 18%; right: 8%; transform: rotate(-10deg); }
+  .cover-blob.b4 { width: 140px; height: 170px; background: var(--redy-red); bottom: 6%; right: 22%; }
+  .cover-blob.b5 { width: 80px; height: 100px; background: var(--redy-peach); bottom: 12%; left: 4%; }
+  .cover-blob.b6 { width: 70px; height: 85px; background: var(--redy-lavender); bottom: 4%; left: 14%; }
+  .cover-blob.b7 { width: 60px; height: 75px; background: var(--redy-red); top: 12%; right: 18%; }
+
+  .cover-content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  .logo-mark {
+    width: 180px;
+    height: 180px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 32px;
+    position: relative;
+  }
+  .logo-mark::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 18px;
+    right: 12px;
+  }
+  .logo-mark span {
+    font-family: var(--font-script);
+    font-size: 78px;
+    color: var(--redy-red);
+    font-weight: 700;
+    transform: rotate(-3deg);
+    line-height: 1;
+  }
+
+  .cover-tag {
+    font-family: var(--font-display);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: var(--redy-red);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  h1.cover-title {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 300;
+    color: var(--redy-ink);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  h1.cover-title em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--redy-red);
+  }
+
+  .cover-subtitle {
+    font-size: 18px;
+    color: var(--redy-charcoal);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .cover-meta {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--redy-charcoal);
+  }
+
+  /* ============ SECTIONS ============ */
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 48px;
+    border-top: 1px solid rgba(42, 20, 24, 0.08);
+  }
+
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--redy-red);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 300;
+    color: var(--redy-ink);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    max-width: 800px;
+  }
+  .section-title em { font-style: italic; color: var(--redy-red); font-weight: 400; }
+
+  .section-lead {
+    font-size: 20px;
+    color: var(--redy-charcoal);
+    max-width: 720px;
+    margin-bottom: 64px;
+    line-height: 1.5;
+  }
+
+  /* ============ ESSENCE ============ */
+  .essence-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+  }
+
+  .essence-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .essence-card::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -20px;
+    right: -20px;
+  }
+  .essence-card:nth-child(1)::before { background: var(--redy-red); }
+  .essence-card:nth-child(2)::before { background: var(--redy-pink); }
+  .essence-card:nth-child(3)::before { background: var(--redy-peach); }
+
+  .essence-num {
+    font-family: var(--font-display);
+    font-size: 14px;
+    color: var(--redy-charcoal);
+    margin-bottom: 32px;
+    letter-spacing: 0.2em;
+  }
+  .essence-card h3 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: var(--redy-ink);
+  }
+  .essence-card p {
+    color: var(--redy-charcoal);
+    font-size: 15px;
+  }
+
+  /* ============ POSITIONING ============ */
+  .positioning {
+    background: var(--redy-ink);
+    color: var(--redy-cream);
+    border-radius: 32px;
+    padding: 80px 64px;
+    margin: 64px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .positioning::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    bottom: -100px;
+    right: -100px;
+    opacity: 0.6;
+  }
+  .positioning::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    top: -60px;
+    left: 30%;
+    opacity: 0.7;
+  }
+  .positioning .ps-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--redy-pink);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .positioning blockquote {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  .positioning blockquote em { color: var(--redy-pink); font-style: italic; font-weight: 400; }
+
+  /* ============ COLORS ============ */
+  .palette {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 280px 200px;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .swatch {
+    border-radius: 20px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .swatch.large { grid-row: span 2; }
+  .swatch-name {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .swatch.large .swatch-name { font-size: 36px; }
+  .swatch-codes {
+    font-family: 'SF Mono', Consolas, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .sw-red { background: var(--redy-red); color: var(--redy-cream); }
+  .sw-pink { background: var(--redy-pink); color: var(--redy-ink); }
+  .sw-pink-soft { background: var(--redy-pink-soft); color: var(--redy-ink); }
+  .sw-cream { background: var(--redy-cream); color: var(--redy-ink); border: 1px solid rgba(42,20,24,0.06); }
+  .sw-peach { background: var(--redy-peach); color: var(--redy-ink); }
+  .sw-lavender { background: var(--redy-lavender); color: var(--redy-ink); }
+  .sw-ink { background: var(--redy-ink); color: var(--redy-cream); }
+  .sw-deep { background: var(--redy-red-deep); color: var(--redy-cream); }
+
+  .palette-meta {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .palette-meta h4 {
+    font-family: var(--font-display);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+    color: var(--redy-red);
+  }
+  .palette-meta p { font-size: 14px; color: var(--redy-charcoal); }
+
+  /* ============ TYPOGRAPHY ============ */
+  .type-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 48px;
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(42, 20, 24, 0.08);
+    align-items: baseline;
+  }
+  .type-meta { font-size: 14px; }
+  .type-meta strong {
+    font-family: var(--font-display);
+    font-size: 20px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .type-meta .role {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    color: var(--redy-red);
+    margin-bottom: 12px;
+  }
+  .type-meta p { color: var(--redy-charcoal); font-size: 13px; line-height: 1.5; }
+
+  .type-sample.fraunces {
+    font-family: var(--font-display);
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--redy-ink);
+  }
+  .type-sample.fraunces em { font-style: italic; color: var(--redy-red); font-weight: 400; }
+
+  .type-sample.dmsans {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--redy-charcoal);
+    max-width: 540px;
+  }
+
+  .type-sample.script {
+    font-family: var(--font-script);
+    font-size: 64px;
+    color: var(--redy-red);
+    line-height: 1;
+    transform: rotate(-2deg);
+    display: inline-block;
+  }
+
+  /* ============ LOGO USAGE ============ */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .logo-cell {
+    aspect-ratio: 1;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-cell.bg-pink { background: var(--redy-pink-soft); }
+  .logo-cell.bg-cream { background: var(--redy-cream); border: 1px solid rgba(42,20,24,0.06); }
+  .logo-cell.bg-ink { background: var(--redy-ink); }
+  .logo-cell.bg-red { background: var(--redy-red); }
+  .logo-cell.bg-pink-full { background: var(--redy-pink); }
+  .logo-cell.bg-pattern {
+    background: var(--redy-pink-soft);
+    background-image: radial-gradient(var(--redy-red) 8%, transparent 9%), radial-gradient(var(--redy-red) 6%, transparent 7%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+  }
+
+  .logo-mark-sm {
+    width: 100px;
+    height: 100px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .logo-mark-sm::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 10px;
+    right: 6px;
+  }
+  .logo-mark-sm span {
+    font-family: var(--font-script);
+    font-size: 44px;
+    color: var(--redy-red);
+    font-weight: 700;
+    transform: rotate(-3deg);
+    line-height: 1;
+  }
+
+  .logo-cell.bg-ink .logo-mark-sm,
+  .logo-cell.bg-red .logo-mark-sm { background: var(--redy-cream); }
+  .logo-cell.bg-pink-full .logo-mark-sm { background: var(--redy-pink-soft); }
+
+  .logo-cell .label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--redy-charcoal);
+  }
+  .logo-cell.bg-ink .label, .logo-cell.bg-red .label { color: var(--redy-pink-soft); }
+
+  /* ============ VOICE ============ */
+  .voice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(42, 20, 24, 0.1);
+  }
+  .voice-col {
+    padding: 48px 40px;
+  }
+  .voice-col.do { background: var(--redy-pink-soft); }
+  .voice-col.dont { background: var(--redy-cream); border-left: 1px solid rgba(42, 20, 24, 0.1); }
+  .voice-col h4 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+  .voice-col.do h4 { color: var(--redy-red); }
+  .voice-col.dont h4 { color: var(--redy-charcoal); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .voice-col ul { list-style: none; }
+  .voice-col li {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(42, 20, 24, 0.08);
+    font-size: 15px;
+    color: var(--redy-ink);
+  }
+  .voice-col li:last-child { border-bottom: none; }
+  .voice-col li::before {
+    content: '"';
+    font-family: var(--font-display);
+    margin-right: 8px;
+    color: var(--redy-red);
+  }
+  .voice-col li::after { content: '"'; font-family: var(--font-display); margin-left: 4px; color: var(--redy-red); }
+
+  /* ============ PATTERNS / IDENTITY ============ */
+  .identity-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 48px;
+    height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .identity-cell { position: relative; padding: 40px; overflow: hidden; }
+  .identity-cell.left { background: var(--redy-pink-soft); }
+  .identity-cell.right { background: var(--redy-red); color: var(--redy-cream); }
+  .identity-cell h4 {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+    max-width: 280px;
+  }
+  .identity-cell.right h4 em { font-style: italic; color: var(--redy-pink); }
+  .identity-cell .blob {
+    position: absolute;
+    border-radius: 50%;
+  }
+  .identity-cell.left .blob1 { width: 140px; height: 170px; background: var(--redy-red); bottom: -30px; right: 20px; }
+  .identity-cell.left .blob2 { width: 80px; height: 100px; background: var(--redy-pink); bottom: 60px; right: 140px; }
+  .identity-cell.left .blob3 { width: 70px; height: 90px; background: var(--redy-peach); bottom: -20px; right: 180px; }
+  .identity-cell.right .blob1 { width: 200px; height: 200px; background: var(--redy-red-deep); top: -60px; right: -40px; opacity: 0.5; }
+  .identity-cell.right .blob2 { width: 120px; height: 140px; background: var(--redy-pink); bottom: -40px; left: -20px; opacity: 0.7; }
+
+  /* ============ MISSION ============ */
+  .mission-block {
+    background: var(--redy-pink-soft);
+    border-radius: 32px;
+    padding: 80px 64px;
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+  }
+  .mission-item h4 {
+    font-family: var(--font-display);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--redy-red);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .mission-item p {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: var(--redy-ink);
+  }
+
+  /* ============ VALUES ============ */
+  .values {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .value-pill {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid rgba(42, 20, 24, 0.06);
+  }
+  .value-pill .num {
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--redy-red);
+    margin-bottom: 8px;
+  }
+  .value-pill h4 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .value-pill p { font-size: 13px; color: var(--redy-charcoal); }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--redy-ink);
+    color: var(--redy-cream);
+    padding: 80px 48px 48px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  footer .footer-mark {
+    width: 80px;
+    height: 80px;
+    background: var(--redy-pink);
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  footer .footer-mark::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--redy-red);
+    border-radius: 50%;
+    top: 8px;
+    right: 5px;
+  }
+  footer .footer-mark span {
+    font-family: var(--font-script);
+    font-size: 36px;
+    color: var(--redy-red);
+    font-weight: 700;
+    transform: rotate(-3deg);
+  }
+  footer h3 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+  footer h3 em { font-style: italic; color: var(--redy-pink); }
+  footer p { font-size: 14px; opacity: 0.7; }
+
+  @media (max-width: 768px) {
+    section { padding: 80px 24px; }
+    .essence-grid { grid-template-columns: 1fr; }
+    .palette { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .swatch { height: 160px; }
+    .swatch.large { grid-row: span 1; height: 200px; }
+    .palette-meta { grid-template-columns: 1fr; }
+    .type-row { grid-template-columns: 1fr; }
+    .voice-grid { grid-template-columns: 1fr; }
+    .voice-col.dont { border-left: none; border-top: 1px solid rgba(42,20,24,0.1); }
+    .logo-grid { grid-template-columns: repeat(2, 1fr); }
+    .identity-strip { grid-template-columns: 1fr; height: auto; }
+    .identity-cell { min-height: 280px; }
+    .mission-block { grid-template-columns: 1fr; padding: 48px 32px; gap: 32px; }
+    .values { grid-template-columns: repeat(2, 1fr); }
+    .cover-meta { padding: 0 24px; flex-direction: column; gap: 8px; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="cover" style="border-top: none; padding: 0;">
+  <div class="cover-blob b1"></div>
+  <div class="cover-blob b2"></div>
+  <div class="cover-blob b3"></div>
+  <div class="cover-blob b4"></div>
+  <div class="cover-blob b5"></div>
+  <div class="cover-blob b6"></div>
+  <div class="cover-blob b7"></div>
+
+  <div class="cover-content">
+    <div class="logo-mark"><span>Redy</span></div>
+    <div class="cover-tag">Brand Guidelines · v1.0 · 2026</div>
+    <h1 class="cover-title">Когато моментът дойде,<br/><em>тя е Redy.</em></h1>
+    <p class="cover-subtitle">Първият внимателно подбран менструален комплект — създаден от майка за майки, които искат разговорът да започне с топлина, не със страх.</p>
+  </div>
+
+  <div class="cover-meta">
+    <span>redy.one</span>
+    <span>Sofia · Bulgaria</span>
+    <span>От майка за майки</span>
+  </div>
+</section>
+
+<!-- ============ ESSENCE ============ -->
+<section>
+  <div class="section-label">01 — Ядро на бранда</div>
+  <h2 class="section-title">Три неща, на които<br/>всичко стъпва.</h2>
+  <p class="section-lead">Redy не е продукт. Redy е първият спокоен разговор. Тонът, цветовете и решенията започват винаги от тези три стълба — в този ред.</p>
+
+  <div class="essence-grid">
+    <div class="essence-card">
+      <div class="essence-num">01 / Основа</div>
+      <h3>Майчина топлина</h3>
+      <p>Лично писмо в кутията. Мек език. Истински истории от майки. Без инфантилизация, без драматизация.</p>
+    </div>
+    <div class="essence-card">
+      <div class="essence-num">02 / Глас</div>
+      <h3>Социална смелост</h3>
+      <p>Говорим открито за това, което поколения мълчаха. Разбиваме срама с нежност, не с бунт.</p>
+    </div>
+    <div class="essence-card">
+      <div class="essence-num">03 / Фундамент</div>
+      <h3>Еко грижа</h3>
+      <p>Био материали, конопени превръзки, чисти суровини. Грижа за тялото и за бъдещето.</p>
+    </div>
+  </div>
+
+  <div class="positioning">
+    <div class="ps-label">Позициониране</div>
+    <blockquote>
+      Redy е първият внимателно подбран менструален комплект, създаден <em>от майка за майки</em>. Той не просто подготвя момичето — той подготвя разговора.
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ COLORS ============ -->
+<section>
+  <div class="section-label">02 — Палитра</div>
+  <h2 class="section-title">Цветове, които <em>прегръщат.</em></h2>
+  <p class="section-lead">Червено като знак за идентичност, не за тревога. Розово като майчина прегръдка. Беж като топлина на дома. Без болнична стерилност.</p>
+
+  <div class="palette">
+    <div class="swatch sw-red large">
+      <div>
+        <div class="swatch-name">Redy Red</div>
+        <div style="font-size:13px;opacity:0.85;margin-top:6px;">Основен — символ, не аларма</div>
+      </div>
+      <div class="swatch-codes">
+        HEX #C8102E<br/>
+        RGB 200, 16, 46<br/>
+        CMYK 0, 92, 77, 22<br/>
+        Pantone 186 C
+      </div>
+    </div>
+    <div class="swatch sw-pink">
+      <div class="swatch-name">Pink</div>
+      <div class="swatch-codes">#FF8FB5</div>
+    </div>
+    <div class="swatch sw-pink-soft">
+      <div class="swatch-name">Blush</div>
+      <div class="swatch-codes">#FFE4ED</div>
+    </div>
+    <div class="swatch sw-cream">
+      <div class="swatch-name">Cream</div>
+      <div class="swatch-codes">#FFF5EE</div>
+    </div>
+    <div class="swatch sw-peach">
+      <div class="swatch-name">Peach</div>
+      <div class="swatch-codes">#F5B384</div>
+    </div>
+    <div class="swatch sw-lavender">
+      <div class="swatch-name">Lavender</div>
+      <div class="swatch-codes">#B5A4D4</div>
+    </div>
+    <div class="swatch sw-ink">
+      <div class="swatch-name">Ink</div>
+      <div class="swatch-codes">#2A1418</div>
+    </div>
+  </div>
+
+  <div class="palette-meta">
+    <div>
+      <h4>Доминанта</h4>
+      <p>Redy Red и Blush заемат ~70% от визуалната тежест. Не се конкурират — Red е акцент върху Blush.</p>
+    </div>
+    <div>
+      <h4>Подкрепа</h4>
+      <p>Pink, Peach и Lavender се появяват в петна-форми и илюстрации — никога като големи плътни блокове.</p>
+    </div>
+    <div>
+      <h4>Текст</h4>
+      <p>Ink за основен текст. Никога черно (#000) — твърде клинично за нашия тон.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPOGRAPHY ============ -->
+<section>
+  <div class="section-label">03 — Типография</div>
+  <h2 class="section-title">Шрифт като <em>глас.</em></h2>
+  <p class="section-lead">Display шрифт с характер — топъл, литературен, женствен без да е сладникав. Тяло — чисто и съвременно. Скрипт за акценти от ръка.</p>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="role">Display · Заглавия</div>
+      <strong>Fraunces</strong>
+      <p>Variable serif с топла, малко странна осанка. Italic-ът носи лична нотка. За заглавия 28pt+.</p>
+    </div>
+    <div class="type-sample fraunces">Не си сама.<br/><em>Не си различна.</em></div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="role">Body · Основен текст</div>
+      <strong>DM Sans</strong>
+      <p>Геометричен sans с мек ритъм. Чете се леко на дълги пасажи в брошурите и сайта. 14–18pt.</p>
+    </div>
+    <div class="type-sample dmsans">Тялото ти преминава през естествена промяна. Това е нормално, очаквано и красиво. Не си длъжна да знаеш всичко наведнъж — има време за всеки въпрос.</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="role">Script · Лого / акценти</div>
+      <strong>Caveat</strong>
+      <p>Логотипът използва ръчно изписване в червено. Caveat имитира духа за digital usage — само за лого и кратки лични послания.</p>
+    </div>
+    <div class="type-sample script">Ти си Redy.</div>
+  </div>
+</section>
+
+<!-- ============ LOGO ============ -->
+<section>
+  <div class="section-label">04 — Лого</div>
+  <h2 class="section-title">Един знак. <em>Безброй фонове.</em></h2>
+  <p class="section-lead">Логото е ръчно изписаното „Redy" в червено върху розов кръг, с малка червена точка горе вдясно — символ за първата капка, превърната в усмивка.</p>
+
+  <div class="logo-grid">
+    <div class="logo-cell bg-pink"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">Primary · on Blush</div></div>
+    <div class="logo-cell bg-cream"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">Cream</div></div>
+    <div class="logo-cell bg-pattern"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">Pattern</div></div>
+    <div class="logo-cell bg-ink"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">Dark mode</div></div>
+    <div class="logo-cell bg-red"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">On Red</div></div>
+    <div class="logo-cell bg-pink-full"><div class="logo-mark-sm"><span>Redy</span></div><div class="label">On Pink</div></div>
+  </div>
+
+  <div class="palette-meta" style="margin-top: 48px;">
+    <div>
+      <h4>Минимален размер</h4>
+      <p>24px digital, 12mm print. Под този размер точката изчезва и логото губи характер.</p>
+    </div>
+    <div>
+      <h4>Свободно поле</h4>
+      <p>Около логото оставяме разстояние, равно на радиуса на кръга. Не натоварвай.</p>
+    </div>
+    <div>
+      <h4>Не прави</h4>
+      <p>Не разтягай. Не сменяй ъгъла на „Redy". Не слагай ефекти, сенки, обводки. Не използвай върху снимки на хора.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISUAL LANGUAGE ============ -->
+<section>
+  <div class="section-label">05 — Визуален език</div>
+  <h2 class="section-title">Капки и кръгове.<br/>Не <em>кръв.</em></h2>
+  <p class="section-lead">Графичният език са органични форми — капки, овали, петна. Те носят асоциация с момента, без да го показват буквално. Никога не използваме реалистични изображения на кръв или медицински визии.</p>
+
+  <div class="identity-strip">
+    <div class="identity-cell left">
+      <h4>Меко. Органично. Носи се само.</h4>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+    <div class="identity-cell right">
+      <h4>Червеното не е <em>тревога.</em><br/>То е <em>сила.</em></h4>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+    </div>
+  </div>
+
+  <div class="palette-meta" style="margin-top: 48px;">
+    <div>
+      <h4>Форма</h4>
+      <p>Овали с лек наклон (10–25°). Никога идеални кръгове. Несиметрични групи от 3–7 елемента.</p>
+    </div>
+    <div>
+      <h4>Снимки</h4>
+      <p>Мека светлина. Ръце, не лица. Детайли. Домашна атмосфера. Текстил, дърво, естествени материи.</p>
+    </div>
+    <div>
+      <h4>Илюстрация</h4>
+      <p>Опционално: акварелни илюстрации с луни, звезди, цветя. Без кръвни изображения. Меко шрифтово оформление.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOICE ============ -->
+<section>
+  <div class="section-label">06 — Глас</div>
+  <h2 class="section-title">Нежен. Но не <em>бебешки.</em></h2>
+  <p class="section-lead">Подкрепящ, но не драматичен. Информиран, но не клиничен. Близък, но не натрапчив. Майка, която говори — не учител, не лекар, не активист.</p>
+
+  <div class="voice-grid">
+    <div class="voice-col do">
+      <h4>Казваме</h4>
+      <ul>
+        <li>Тялото ти расте и това е естествено.</li>
+        <li>Ако имаш въпроси, винаги можеш да говориш с мен.</li>
+        <li>Не си сама. Не си различна.</li>
+        <li>Спокойно. Това е нормално.</li>
+        <li>Ти си същото момиче, което беше вчера.</li>
+        <li>Да задаваш въпроси е смело.</li>
+      </ul>
+    </div>
+    <div class="voice-col dont">
+      <h4>Не казваме</h4>
+      <ul>
+        <li>Вече си жена.</li>
+        <li>Сега трябва да се пазиш.</li>
+        <li>Това е тежко време.</li>
+        <li>Бъди силна.</li>
+        <li>Не плачи.</li>
+        <li>Това е тайна.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section>
+  <div class="section-label">07 — Какво носим</div>
+  <h2 class="section-title">Мисия, визия,<br/>ценности.</h2>
+
+  <div class="mission-block">
+    <div class="mission-item">
+      <h4>Мисия</h4>
+      <p>Да нормализираме разговора за менструацията и да дадем увереност на всяко момиче.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Визия</h4>
+      <p>Общество, в което никое дете не посреща първия си цикъл със срам или страх.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Обещание</h4>
+      <p>Когато моментът дойде — кутията ще е там, разговорът ще е лесен, тя ще е готова.</p>
+    </div>
+  </div>
+
+  <div class="values">
+    <div class="value-pill"><div class="num">01</div><h4>Спокойствие</h4><p>Не тревога. Не суматоха.</p></div>
+    <div class="value-pill"><div class="num">02</div><h4>Достойнство</h4><p>Без срам. Без подигравка.</p></div>
+    <div class="value-pill"><div class="num">03</div><h4>Образование</h4><p>Без табу. С наука.</p></div>
+    <div class="value-pill"><div class="num">04</div><h4>Подкрепа</h4><p>Майка. Не експерт.</p></div>
+    <div class="value-pill"><div class="num">05</div><h4>Нежност</h4><p>Без инфантилизация.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-mark"><span>Redy</span></div>
+  <h3>redy.one — <em>от майка за майки</em></h3>
+  <p>Brand Guidelines v1.0 · Sofia, 2026</p>
+</footer>
+
+</body>
+</html>
