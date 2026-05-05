@@ -21,3 +21,72 @@
   --font-heading--family:    'Fraunces', Georgia, serif;
   --font-subheading--family: 'DM Sans', -apple-system, sans-serif;
 }
+
+/* ── Header ─────────────────────────────────────────────── */
+.header-wrapper {
+  background: rgba(255, 245, 238, 0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(42, 20, 24, 0.06) !important;
+  box-shadow: none !important;
+}
+
+/* ── Redy logo mark ──────────────────────────────────────── */
+.redy-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.redy-mark {
+  width: 40px;
+  height: 40px;
+  background: var(--redy-pink);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.redy-mark__dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: var(--redy-red);
+  border-radius: 50%;
+  top: 3px;
+  right: 2px;
+}
+
+.redy-mark__text {
+  font-family: var(--font-script);
+  font-size: 19px;
+  color: var(--redy-red);
+  font-weight: 700;
+  transform: rotate(-3deg);
+  line-height: 1;
+  display: block;
+}
+
+.redy-domain {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--redy-ink);
+  letter-spacing: -0.01em;
+}
+
+/* hide Ella's default logo sizing constraints on the fallback */
+.header__heading-logo-wrapper.no-logo {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+/* nav link colour on hover */
+.header-nav-link:hover,
+.header__menu-item:hover {
+  color: var(--redy-red) !important;
+}
