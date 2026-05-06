@@ -1,0 +1,81 @@
+<section class="redy-inside">
+  <div class="redy-container">
+
+    <div class="redy-section-head">
+      <div>
+        <div class="redy-section-tag">{{ section.settings.tag }}</div>
+        <h2 class="redy-section-h2">
+          {{ section.settings.heading_line_1 }}<br>
+          <em>{{ section.settings.heading_line_2 }}</em>
+        </h2>
+      </div>
+      <p class="redy-section-sub">{{ section.settings.subheading }}</p>
+    </div>
+
+    <div class="redy-inside-grid">
+      {%- for block in section.blocks -%}
+        {%- assign card_style = block.settings.style -%}
+        <div class="redy-inside-card{% if card_style != 'default' %} redy-inside-card--{{ card_style }}{% endif %}" {{ block.shopify_attributes }}>
+          <div class="redy-card-num">{{ block.settings.num }}</div>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <div class="redy-card-blob"></div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Box Contents",
+  "tag": "section",
+  "class": "redy-inside-section",
+  "settings": [
+    { "type": "text", "id": "tag", "label": "Section tag", "default": "Какво има вътре" },
+    { "type": "text", "id": "heading_line_1", "label": "Heading line 1", "default": "Всичко, което трябва." },
+    { "type": "text", "id": "heading_line_2", "label": "Heading line 2 (italic)", "default": "Нищо, което плаши." },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Кутията е малка вселена от грижа — практичните неща са там, но емоционалните също. Защото тя ще има нужда и от двете." }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Box item",
+      "settings": [
+        { "type": "text", "id": "num", "label": "Item label", "default": "01" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Продукт" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "Описание на продукта." },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Card style",
+          "options": [
+            { "value": "default", "label": "Default (pink-soft)" },
+            { "value": "feat", "label": "Featured (red, spans 2)" },
+            { "value": "cream", "label": "Cream" },
+            { "value": "peach", "label": "Peach" },
+            { "value": "lavender", "label": "Lavender" },
+            { "value": "dark", "label": "Dark (ink)" }
+          ],
+          "default": "default"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Box Contents",
+      "blocks": [
+        { "type": "card", "settings": { "num": "01 \/ Сърцевината", "title": "Брошура „Когато тялото ти пораства"", "text": "Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.", "style": "feat" } },
+        { "type": "card", "settings": { "num": "02", "title": "Био превръзки", "text": "Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.", "style": "default" } },
+        { "type": "card", "settings": { "num": "03", "title": "Несесер", "text": "Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.", "style": "cream" } },
+        { "type": "card", "settings": { "num": "04", "title": "Картичка", "text": "„Ти си Redy." Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.", "style": "peach" } },
+        { "type": "card", "settings": { "num": "05", "title": "Топъл чай", "text": "Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.", "style": "lavender" } },
+        { "type": "card", "settings": { "num": "06 \/ Бонус", "title": "Наръчник за родителя", "text": "Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.", "style": "dark" } },
+        { "type": "card", "settings": { "num": "07", "title": "QR код към ресурси", "text": "Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.", "style": "default" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

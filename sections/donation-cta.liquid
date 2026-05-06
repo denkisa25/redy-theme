@@ -1,0 +1,32 @@
+<section class="redy-donation">
+  <div class="redy-donation__blob redy-donation__blob--1"></div>
+  <div class="redy-donation__blob redy-donation__blob--2"></div>
+  <div class="redy-donation__blob redy-donation__blob--3"></div>
+  <div class="redy-donation__content">
+    <h2>
+      {{ section.settings.heading_line_1 }}<br>
+      {{ section.settings.heading_line_2_prefix }}&nbsp;<em>{{ section.settings.heading_line_2_em }}</em>
+    </h2>
+    <p>{{ section.settings.body }}</p>
+    <a href="{{ section.settings.cta_url }}" class="redy-btn redy-btn--light">
+      {{ section.settings.cta_label }}<span aria-hidden="true" class="redy-btn__arrow">→</span>
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Donation CTA",
+  "tag": "section",
+  "class": "redy-donation-section",
+  "settings": [
+    { "type": "text", "id": "heading_line_1", "label": "Heading line 1", "default": "Бъди готова" },
+    { "type": "text", "id": "heading_line_2_prefix", "label": "Heading line 2 — prefix", "default": "преди тя да е" },
+    { "type": "text", "id": "heading_line_2_em", "label": "Heading line 2 — italic word(s)", "default": "готова." },
+    { "type": "textarea", "id": "body", "label": "Body text", "default": "Първа серия — 50 кутии, ръчно опаковани в София. Поръчай сега и получи безплатно лично писмо с името на дъщеря ти." },
+    { "type": "text", "id": "cta_label", "label": "CTA button label", "default": "Поръчай първата кутия — 49 лв" },
+    { "type": "url", "id": "cta_url", "label": "CTA button link" }
+  ],
+  "presets": [{ "name": "Donation CTA" }]
+}
+{% endschema %}

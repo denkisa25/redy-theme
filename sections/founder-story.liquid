@@ -1,0 +1,57 @@
+<section class="redy-story">
+  <div class="redy-story-grid">
+
+    <div class="redy-story__img">
+      <div class="redy-story__img-text">{{ section.settings.img_text | newline_to_br }}</div>
+    </div>
+
+    <div class="redy-story__text">
+      <div class="redy-section-tag">{{ section.settings.tag }}</div>
+      <h2>
+        {{ section.settings.heading_before_em_1 }}&nbsp;<em>{{ section.settings.heading_em_1 }}</em><br>
+        {{ section.settings.heading_mid }}<br>
+        {{ section.settings.heading_before_em_2 }}&nbsp;<em>{{ section.settings.heading_em_2 }}</em>
+      </h2>
+
+      {%- for i in (1..3) -%}
+        {%- assign para_key = 'para_' | append: i -%}
+        {%- if section.settings[para_key] != blank -%}
+          <p>{{ section.settings[para_key] }}</p>
+        {%- endif -%}
+      {%- endfor -%}
+
+      <div class="redy-story__sig">
+        <span class="redy-story__sig-script">{{ section.settings.sig_name }}</span>
+        <div class="redy-story__sig-info">
+          <strong>{{ section.settings.sig_full_name }}</strong>
+          {{ section.settings.sig_role }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Founder Story",
+  "tag": "section",
+  "class": "redy-story-section",
+  "settings": [
+    { "type": "text", "id": "img_text", "label": "Image overlay text (line break = new line)", "default": "от майка\nза майки" },
+    { "type": "text", "id": "tag", "label": "Section tag", "default": "Защо Redy" },
+    { "type": "text", "id": "heading_before_em_1", "label": "Heading — text before 1st italic", "default": "Скоро дъщеря ми ще има" },
+    { "type": "text", "id": "heading_em_1", "label": "Heading — 1st italic phrase", "default": "първия си цикъл." },
+    { "type": "text", "id": "heading_mid", "label": "Heading — middle line", "default": "Започнах с кутия за нея." },
+    { "type": "text", "id": "heading_before_em_2", "label": "Heading — text before 2nd italic", "default": "Превърна се в кутия" },
+    { "type": "text", "id": "heading_em_2", "label": "Heading — 2nd italic phrase", "default": "за нашите дъщери." },
+    { "type": "textarea", "id": "para_1", "label": "Paragraph 1", "default": "Когато започнах да се подготвям за този разговор, осъзнах нещо — не се страхувам от темата. Страхувам се да не я направя по-голяма, отколкото е." },
+    { "type": "textarea", "id": "para_2", "label": "Paragraph 2", "default": "Поколения преди нас го получаваха като шепот в кухнята. Като нещо, което се крие в чантата. Като „тайна". Не искам това за дъщеря ми. Не искам това за никое момиче." },
+    { "type": "textarea", "id": "para_3", "label": "Paragraph 3", "default": "Redy не е активизъм. Redy е спокойствие. Първата кутия е за нея — но и за нас, майките, които искаме разговорът да започне правилно." },
+    { "type": "text", "id": "sig_name", "label": "Signature (script font)", "default": "Анна" },
+    { "type": "text", "id": "sig_full_name", "label": "Full name", "default": "Анна Г." },
+    { "type": "text", "id": "sig_role", "label": "Role / subtitle", "default": "основател на Redy · майка на Виктория" }
+  ],
+  "presets": [{ "name": "Founder Story" }]
+}
+{% endschema %}

@@ -1,0 +1,30 @@
+<section class="redy-statement">
+  <div class="redy-statement__blob redy-statement__blob--1"></div>
+  <div class="redy-statement__blob redy-statement__blob--2"></div>
+  <div class="redy-statement__blob redy-statement__blob--3"></div>
+  <div class="redy-statement__blob redy-statement__blob--4"></div>
+  <div class="redy-statement__inner">
+    <p class="redy-statement__quote">
+      {{ section.settings.line_1 }}<br>
+      {{ section.settings.line_2_prefix }}&nbsp;<em>{{ section.settings.line_2_em }}</em><br>
+      {{ section.settings.line_3 }}
+    </p>
+    <div class="redy-statement__attr">{{ section.settings.attr }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Statement Quote",
+  "tag": "section",
+  "class": "redy-statement-section",
+  "settings": [
+    { "type": "text", "id": "line_1", "label": "Quote — line 1", "default": "Първата менструация не е просто биологично събитие." },
+    { "type": "text", "id": "line_2_prefix", "label": "Quote — line 2 prefix", "default": "Тя е" },
+    { "type": "text", "id": "line_2_em", "label": "Quote — line 2 italic word(s)", "default": "момент," },
+    { "type": "text", "id": "line_3", "label": "Quote — line 3", "default": "който остава в паметта за години." },
+    { "type": "text", "id": "attr", "label": "Attribution", "default": "— Защо Redy съществува" }
+  ],
+  "presets": [{ "name": "Statement Quote" }]
+}
+{% endschema %}
