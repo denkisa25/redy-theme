@@ -235,8 +235,7 @@
                 }
               },
               "block_order": [
-                "text_xrnftG",
-                "product_info_cExQYf"
+                "text_xrnftG"
               ]
             },
             "price_wUxKFf": {
@@ -1092,6 +1091,81 @@
                 "file_field_HkEpaP"
               ]
             },
+            "donate_note": {
+              "type": "text",
+              "settings": {
+                "text": "<p><small>Купи едно — даряваш едно на нуждаещо се момиче.</small></p>",
+                "collection_description_only": false,
+                "collapse_text": false,
+                "typing_text": false,
+                "primary_text": "",
+                "secondary_text": "",
+                "third_text": "",
+                "highlight_text": false,
+                "highlight_text_content": "",
+                "highlight_text_type": "text",
+                "underline_height": 18,
+                "underline_offset": -20,
+                "highlight_text_color": "#000000",
+                "highlight_underline_color": "#000000",
+                "spacing_text": false,
+                "spacing_text_content": "",
+                "spacing_text_left": 0,
+                "spacing_text_right": 0,
+                "stroke_text": false,
+                "stroke_text_content": "",
+                "sticky_text": false,
+                "sticky_text_color": "#ffffff",
+                "mix_blend_mode": false,
+                "width": "100%",
+                "unit": "percent",
+                "custom_width": 100,
+                "custom_width_pixel": 500,
+                "inherit_text_alignment": true,
+                "justify_alignment": false,
+                "alignment": "left",
+                "width_tablet": "100%",
+                "unit_tablet": "percent",
+                "custom_width_tablet": 100,
+                "custom_width_tablet_pixel": 100,
+                "inherit_text_alignment_tablet": true,
+                "justify_alignment_tablet": false,
+                "alignment_tablet": "left",
+                "width_mobile": "100%",
+                "unit_mobile": "percent",
+                "custom_width_mobile": 100,
+                "custom_width_mobile_pixel": 100,
+                "inherit_text_alignment_mobile": true,
+                "justify_alignment_mobile": false,
+                "alignment_mobile": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1.4rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "enable_border": false,
+                "enable_border_bottom": false,
+                "border": "none",
+                "border_width": 0,
+                "border_width_type": "100%",
+                "border_custom_width": 100,
+                "border_radius": 0,
+                "text_effect": "none",
+                "heading_only": false,
+                "heading_effect": "none",
+                "animation_repeat": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -1156,11 +1230,8 @@
           "block_order": [
             "group_icgrde",
             "price_wUxKFf",
-            "product_countdown_KjGgKH",
             "variant_picker_R3rGDr",
-            "product_hot_stock_PQa77U",
-            "perks_PXqft4",
-            "customization_option_GtKNKe",
+            "donate_note",
             "buy_buttons_eYQEYi"
           ]
         },
@@ -1218,7 +1289,7 @@
         "product_details_overlay_on_scroll_mobile": false,
         "limit_details_width": false,
         "gap": 60,
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1248,7 +1319,7 @@
           "type": "description",
           "name": "t:settings.description",
           "settings": {
-            "title": "Description",
+            "title": "За кутията",
             "open_by_default": false
           }
         },
@@ -1266,7 +1337,7 @@
         "html_HcKXRM": {
           "type": "html",
           "settings": {
-            "title": "Shipping & Return",
+            "title": "Доставка",
             "open_by_default": false,
             "custom_content_type": "all",
             "product_tab_key_metafield": "",
@@ -1288,9 +1359,7 @@
       },
       "block_order": [
         "description_KGH7xF",
-        "html_bpg6VR",
-        "html_HcKXRM",
-        "html_NRR4gL"
+        "html_HcKXRM"
       ],
       "name": "t:names.product_tabs",
       "settings": {
@@ -1995,9 +2064,6 @@
   },
   "order": [
     "main",
-    "quick_order_list_XTrabM",
-    "section_product_tabs_U8mYg9",
-    "recently_viewed_products_WcH46k",
-    "product_recommendations_ecaxGU"
+    "section_product_tabs_U8mYg9"
   ]
 }

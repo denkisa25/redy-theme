@@ -929,3 +929,72 @@
 
   .redy-donation { padding: 120px 24px; }
 }
+
+/* ============================================================
+   PHASE 5 — PRODUCT PAGE
+   ============================================================ */
+
+/* Product title — Fraunces editorial weight */
+.main-product .product-title,
+.main-product [data-block-type="_product-details"] h1,
+.main-product .h1 {
+  font-family: var(--font-display) !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Add-to-cart button — Redy red pill */
+.add-to-cart-button.button {
+  border-radius: 999px !important;
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+}
+
+/* Price block — slightly larger, Fraunces */
+.main-product .price--large,
+.main-product .price__regular .price-item {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  font-size: 2.4rem !important;
+  color: var(--redy-ink) !important;
+}
+
+/* Donate note — small muted line below price */
+.main-product .rte small {
+  font-size: 13px;
+  opacity: 0.7;
+  color: var(--redy-charcoal);
+  letter-spacing: 0.01em;
+}
+
+/* Product tabs — Redy active underline */
+.section-product-tabs .tab-title.is-active,
+.section-product-tabs .tab-title:focus {
+  color: var(--redy-red) !important;
+}
+
+.section-product-tabs .tab-active-indicator,
+.section-product-tabs [data-tab-active-border] {
+  background-color: var(--redy-red) !important;
+}
+
+/* Variant picker pills — red selected state */
+.variant-picker__option-label.is-active,
+.variant-picker__option-label--selected {
+  border-color: var(--redy-red) !important;
+  color: var(--redy-red) !important;
+}
+
+/* Sticky ATC — cream background, red button */
+.sticky-atc {
+  background: var(--redy-cream) !important;
+  border-top: 1px solid rgba(200, 16, 46, 0.12) !important;
+}
+
+/* ── Phase 5 responsive ──────────────────────────────────── */
+@media (max-width: 749px) {
+  .add-to-cart-button.button {
+    border-radius: 999px !important;
+  }
+}

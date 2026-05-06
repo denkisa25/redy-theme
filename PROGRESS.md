@@ -1,5 +1,18 @@
 # Redy — Build Progress
 
+## Phase 5 — Product page (2026-05-07)
+
+### Changed
+- **`templates/product.json`**: switched main section from `scheme-6` (white/generic) to `scheme-1` (cream bg + Redy red buttons)
+- **Block cleanup**: removed vendor/SKU/barcode block, product countdown, hot stock indicator, size chart/colour comparison/ask-an-expert perks, customization option — all noise for a single-SKU brand
+- **Donate note**: added text block under price — "Купи едно — даряваш едно на нуждаещо се момиче."
+- **Product tabs**: renamed "Description" → "За кутията", "Shipping & Return" → "Доставка"; removed unused Additional Information and Custom Tab tabs
+- **Section order**: removed recently-viewed-products and product-recommendations sections (single-product store)
+- **`assets/redy-tokens.css`**: added Phase 5 rules — Fraunces weight-300 product title, red pill ATC button, Fraunces price display, red tab active indicator, sticky ATC cream bg, variant pill red selected state
+
+### Next
+- Phase 6 — Polish: mobile QA, performance, SEO meta, OG images, legal pages (GDPR, privacy, terms, returns)
+
 ## Phase 2 iteration 2 — Header & Hero refinement (2026-05-07)
 
 ### Changed
