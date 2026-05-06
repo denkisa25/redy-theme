@@ -992,6 +992,18 @@
   border-top: 1px solid rgba(200, 16, 46, 0.12) !important;
 }
 
+/* Hide blocks that must stay in block_order but shouldn't render */
+.main-product .product-countdown,
+.main-product .product-hot-stock,
+.main-product .perks-wrapper,
+.main-product .customization-option,
+.main-product [data-block-type="product-countdown"],
+.main-product [data-block-type="product-hot-stock"],
+.main-product [data-block-type="_perks"],
+.main-product [data-block-type="_customization-option"] {
+  display: none !important;
+}
+
 /* ── Phase 5 responsive ──────────────────────────────────── */
 @media (max-width: 749px) {
   .add-to-cart-button.button {

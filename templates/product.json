@@ -219,12 +219,12 @@
                   "type": "product-info",
                   "name": "t:names.product_info",
                   "settings": {
-                    "show_vendor": true,
-                    "show_sku": true,
-                    "show_barcode": true,
-                    "show_availability": true,
+                    "show_vendor": false,
+                    "show_sku": false,
+                    "show_barcode": false,
+                    "show_availability": false,
                     "stock_level_display": "none",
-                    "show_product_type": true,
+                    "show_product_type": false,
                     "gap": 10,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -235,7 +235,8 @@
                 }
               },
               "block_order": [
-                "text_xrnftG"
+                "text_xrnftG",
+                "product_info_cExQYf"
               ]
             },
             "price_wUxKFf": {
@@ -1230,7 +1231,11 @@
           "block_order": [
             "group_icgrde",
             "price_wUxKFf",
+            "product_countdown_KjGgKH",
             "variant_picker_R3rGDr",
+            "product_hot_stock_PQa77U",
+            "perks_PXqft4",
+            "customization_option_GtKNKe",
             "donate_note",
             "buy_buttons_eYQEYi"
           ]
