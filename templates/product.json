@@ -1095,7 +1095,7 @@
             "donate_note": {
               "type": "text",
               "settings": {
-                "text": "<p><small>Купи едно — даряваш едно на нуждаещо се момиче.</small></p>",
+                "text": "<p>Купи едно — даряваш едно на нуждаещо се момиче.</p>",
                 "collection_description_only": false,
                 "collapse_text": false,
                 "typing_text": false,
