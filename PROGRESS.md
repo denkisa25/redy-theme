@@ -13,6 +13,19 @@
 ### Next
 - Phase 6 — Polish: mobile QA, performance, SEO meta, OG images, legal pages (GDPR, privacy, terms, returns)
 
+## Phase 6 — Polish (2026-05-07)
+
+### Changed
+- **`sections/faq-redy.liquid`** (new): native `<details>` accordion, 6 Bulgarian FAQ items, 2-col grid matching reference design, red +/× toggle icon
+- **`templates/index.json`**: disabled all 10 Ella default homepage sections (slideshow, collection lists, lookbook, marquee, media gallery); added `faq_redy_main` between donation CTA and the disabled sections
+- **`assets/redy-tokens.css`**: Phase 6 FAQ styles — cream background, Fraunces heading, border-top accordion list, animated red icon on open state; mobile 1-col at 900px
+- **SEO**: Ella's `meta-tags.liquid` already outputs correct OG/Twitter tags — store name, description, and OG image to be configured in Shopify Admin > Online Store > Preferences
+- **Product page upload fixes**: restored all block IDs to block_order (Shopify requires every block in `blocks` to also appear in `block_order`); hid unwanted blocks via CSS `display:none`
+
+### Next
+- Phase 7 — Launch prep: Еконт shipping app, BGN currency, payment gateway, test checkout end-to-end
+- Admin tasks: set store name to "Redy", set SEO description, upload OG social sharing image (1200×630px)
+
 ## Phase 2 iteration 2 — Header & Hero refinement (2026-05-07)
 
 ### Changed

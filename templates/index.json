@@ -366,7 +366,8 @@
         "color_scheme_mobile": "scheme-9",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
+      },
+      "disabled": true
     },
     "collection_list_NRwJx3": {
       "type": "collection-list",
@@ -1037,7 +1038,8 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
+      },
+      "disabled": true
     },
     "section_7hRDd8": {
       "type": "section",
@@ -1568,7 +1570,8 @@
         "padding-block-end": 40,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      }
+      },
+      "disabled": true
     },
     "lookbook_q8nVmX": {
       "type": "lookbook",
@@ -2433,7 +2436,8 @@
         "image_behavior": "none",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
+      },
+      "disabled": true
     },
     "collection_list_jUH9xq": {
       "type": "collection-list",
@@ -2931,7 +2935,8 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
+      },
+      "disabled": true
     },
     "section_XMawhC": {
       "type": "section",
@@ -3897,7 +3902,8 @@
         "padding-block-end": 0,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      }
+      },
+      "disabled": true
     },
     "section_WzKJeK": {
       "type": "section",
@@ -4256,7 +4262,8 @@
         "padding-block-end": 0,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      }
+      },
+      "disabled": true
     },
     "marquee_cbrgCX": {
       "type": "marquee",
@@ -4369,7 +4376,8 @@
         "speed": 20,
         "padding-block-start": 45,
         "padding-block-end": 40
-      }
+      },
+      "disabled": true
     },
     "media_gallery_d6yh4R": {
       "type": "media-gallery",
@@ -6053,7 +6061,8 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 80
-      }
+      },
+      "disabled": true
     },
     "marquee_FQpNFr": {
       "type": "marquee",
@@ -6172,7 +6181,8 @@
         "speed": 20,
         "padding-block-start": 24,
         "padding-block-end": 24
-      }
+      },
+      "disabled": true
     },
     "hero_redy_main": {
       "type": "hero-redy",
@@ -6185,15 +6195,79 @@
     "box_contents_main": {
       "type": "box-contents",
       "blocks": {
-        "card_1": { "type": "card", "settings": { "num": "01 / Сърцевината", "title": "Брошура „Когато тялото ти пораства“", "text": "Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.", "style": "feat" } },
-        "card_2": { "type": "card", "settings": { "num": "02", "title": "Био превръзки", "text": "Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.", "style": "default" } },
-        "card_3": { "type": "card", "settings": { "num": "03", "title": "Несесер", "text": "Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.", "style": "cream" } },
-        "card_4": { "type": "card", "settings": { "num": "04", "title": "Картичка", "text": "„Ти си Redy.“ Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.", "style": "peach" } },
-        "card_5": { "type": "card", "settings": { "num": "05", "title": "Топъл чай", "text": "Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.", "style": "lavender" } },
-        "card_6": { "type": "card", "settings": { "num": "06 / Бонус", "title": "Наръчник за родителя", "text": "Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.", "style": "dark" } },
-        "card_7": { "type": "card", "settings": { "num": "07", "title": "QR код към ресурси", "text": "Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.", "style": "default" } }
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "num": "01 / Сърцевината",
+            "title": "Брошура „Когато тялото ти пораства“",
+            "text": "Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.",
+            "style": "feat"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "num": "02",
+            "title": "Био превръзки",
+            "text": "Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.",
+            "style": "default"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "num": "03",
+            "title": "Несесер",
+            "text": "Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.",
+            "style": "cream"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "num": "04",
+            "title": "Картичка",
+            "text": "„Ти си Redy.“ Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.",
+            "style": "peach"
+          }
+        },
+        "card_5": {
+          "type": "card",
+          "settings": {
+            "num": "05",
+            "title": "Топъл чай",
+            "text": "Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.",
+            "style": "lavender"
+          }
+        },
+        "card_6": {
+          "type": "card",
+          "settings": {
+            "num": "06 / Бонус",
+            "title": "Наръчник за родителя",
+            "text": "Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.",
+            "style": "dark"
+          }
+        },
+        "card_7": {
+          "type": "card",
+          "settings": {
+            "num": "07",
+            "title": "QR код към ресурси",
+            "text": "Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.",
+            "style": "default"
+          }
+        }
       },
-      "block_order": ["card_1", "card_2", "card_3", "card_4", "card_5", "card_6", "card_7"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4",
+        "card_5",
+        "card_6",
+        "card_7"
+      ],
       "settings": {}
     },
     "founder_story_main": {
@@ -6203,6 +6277,68 @@
     "donation_cta_main": {
       "type": "donation-cta",
       "settings": {}
+    },
+    "faq_redy_main": {
+      "type": "faq-redy",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "На каква възраст е подходяща кутията?",
+            "answer": "За момичета между 9 и 13 години — но няма правило. Подаряваме я около 9–10 г. възраст, за да е готова преди да я изненада. Тонът е премерен — не плаши малките, не звучи детски на по-големите."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Подходяща ли е, ако тя още няма цикъл?",
+            "answer": "Точно затова е създадена. Кутията се отваря преди първата менструация — за подготовка. Така моментът, когато дойде, не е изненада, а нещо познато."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Защо био превръзки?",
+            "answer": "Конопените био превръзки нямат хлор, аромати и синтетични влакна. Дишат. По-добри са за чувствителна кожа и за околната среда. Първото докосване с този продукт има значение."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Какво включва моделът „купи една — даряваш една“?",
+            "answer": "За всяка продадена кутия даряваме една на момиче без достъп — чрез партньорства с училища и социални служби. Прозрачен брой, ежемесечен отчет на сайта."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Доставка и връщане?",
+            "answer": "Доставка с Еконт за 1–2 работни дни в цяла България. Безплатна над 60 лв. Връщане в 14 дни, ако кутията е неразопакована."
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "Може ли подарък за рожден ден / кръщелница?",
+            "answer": "Да — много майки и кръстници избират Redy точно за такъв повод. Имаме опция за лично послание на картичката."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
+      "settings": {
+        "tag": "Често",
+        "heading_line_1": "Въпроси,",
+        "heading_before_em": "които",
+        "heading_em": "чувам най-често.",
+        "contact_note": "Ако твоят го няма тук — пиши ми лично на hi@redy.one."
+      }
     }
   },
   "order": [
@@ -6211,6 +6347,7 @@
     "box_contents_main",
     "founder_story_main",
     "donation_cta_main",
+    "faq_redy_main",
     "slideshow_tyrRgz",
     "collection_list_NRwJx3",
     "section_7hRDd8",

@@ -1,0 +1,68 @@
+<section class="redy-faq">
+  <div class="redy-faq-grid">
+
+    <div class="redy-faq__intro">
+      <div class="redy-section-tag">{{ section.settings.tag }}</div>
+      <h2 class="redy-faq__heading">
+        {{ section.settings.heading_line_1 }}<br>
+        {{ section.settings.heading_before_em }}&nbsp;<em>{{ section.settings.heading_em }}</em>
+      </h2>
+      {%- if section.settings.contact_note != blank -%}
+        <p class="redy-faq__contact">{{ section.settings.contact_note }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="redy-faq__list">
+      {%- for block in section.blocks -%}
+        <details class="redy-faq__item" {{ block.shopify_attributes }}>
+          <summary class="redy-faq__q">
+            {{ block.settings.question }}
+            <span class="redy-faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="redy-faq__a">
+            <p>{{ block.settings.answer }}</p>
+          </div>
+        </details>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "section",
+  "class": "redy-faq-section",
+  "settings": [
+    { "type": "text", "id": "tag", "label": "Section tag", "default": "Често" },
+    { "type": "text", "id": "heading_line_1", "label": "Heading line 1", "default": "Въпроси," },
+    { "type": "text", "id": "heading_before_em", "label": "Heading — text before italic", "default": "които" },
+    { "type": "text", "id": "heading_em", "label": "Heading — italic phrase", "default": "чувам най-често." },
+    { "type": "text", "id": "contact_note", "label": "Contact note (below heading)", "default": "Ако твоят го няма тук — пиши ми лично на hi@redy.one." }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "Въпрос?" },
+        { "type": "textarea", "id": "answer", "label": "Answer", "default": "Отговор." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        { "type": "faq", "settings": { "question": "На каква възраст е подходяща кутията?", "answer": "За момичета между 9 и 13 години — но няма правило. Подаряваме я около 9–10 г. възраст, за да е готова преди да я изненада. Тонът е премерен — не плаши малките, не звучи детски на по-големите." } },
+        { "type": "faq", "settings": { "question": "Подходяща ли е, ако тя още няма цикъл?", "answer": "Точно затова е създадена. Кутията се отваря преди първата менструация — за подготовка. Така моментът, когато дойде, не е изненада, а нещо познато." } },
+        { "type": "faq", "settings": { "question": "Защо био превръзки?", "answer": "Конопените био превръзки нямат хлор, аромати и синтетични влакна. Дишат. По-добри са за чувствителна кожа и за околната среда. Първото докосване с този продукт има значение." } },
+        { "type": "faq", "settings": { "question": "Какво включва моделът „купи една — даряваш една“?", "answer": "За всяка продадена кутия даряваме една на момиче без достъп — чрез партньорства с училища и социални служби. Прозрачен брой, ежемесечен отчет на сайта." } },
+        { "type": "faq", "settings": { "question": "Доставка и връщане?", "answer": "Доставка с Еконт за 1–2 работни дни в цяла България. Безплатна над 60 лв. Връщане в 14 дни, ако кутията е неразопакована." } },
+        { "type": "faq", "settings": { "question": "Може ли подарък за рожден ден / кръщелница?", "answer": "Да — много майки и кръстници избират Redy точно за такъв повод. Имаме опция за лично послание на картичката." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
