@@ -291,16 +291,25 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_AMqry8", "button_Qef7Ch"]
+                  "block_order": [
+                    "text_AMqry8",
+                    "button_Qef7Ch"
+                  ]
                 }
               },
-              "block_order": ["group_ai7ML8"]
+              "block_order": [
+                "group_ai7ML8"
+              ]
             }
           },
-          "block_order": ["group_cgxUxT"]
+          "block_order": [
+            "group_cgxUxT"
+          ]
         }
       },
-      "block_order": ["slide_3UKqHy"],
+      "block_order": [
+        "slide_3UKqHy"
+      ],
       "name": "Slideshow",
       "settings": {
         "slideshow_type": "default",
@@ -639,10 +648,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["button_wPqqEW"]
+                  "block_order": [
+                    "button_wPqqEW"
+                  ]
                 }
               },
-              "block_order": ["group_basic_Ew37rq"]
+              "block_order": [
+                "group_basic_Ew37rq"
+              ]
             },
             "group_zVhRid": {
               "type": "group",
@@ -807,10 +820,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["button_7DkJRc"]
+                  "block_order": [
+                    "button_7DkJRc"
+                  ]
                 }
               },
-              "block_order": ["group_basic_zXhNbm"]
+              "block_order": [
+                "group_basic_zXhNbm"
+              ]
             },
             "group_9JqzMD": {
               "type": "group",
@@ -975,13 +992,21 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["button_by3CV3"]
+                  "block_order": [
+                    "button_by3CV3"
+                  ]
                 }
               },
-              "block_order": ["group_basic_bVdVpe"]
+              "block_order": [
+                "group_basic_bVdVpe"
+              ]
             }
           },
-          "block_order": ["group_V9qXag", "group_zVhRid", "group_9JqzMD"]
+          "block_order": [
+            "group_V9qXag",
+            "group_zVhRid",
+            "group_9JqzMD"
+          ]
         }
       },
       "name": "Collection list",
@@ -1327,10 +1352,16 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["button_3tCPcg", "button_EnRdUr"]
+              "block_order": [
+                "button_3tCPcg",
+                "button_EnRdUr"
+              ]
             }
           },
-          "block_order": ["text_aMRfYK", "group_HkVAAL"]
+          "block_order": [
+            "text_aMRfYK",
+            "group_HkVAAL"
+          ]
         },
         "product_grid_fmCedc": {
           "type": "product-grid",
@@ -1499,7 +1530,10 @@
           "block_order": []
         }
       },
-      "block_order": ["group_rgNmqd", "product_grid_fmCedc"],
+      "block_order": [
+        "group_rgNmqd",
+        "product_grid_fmCedc"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -1905,13 +1939,20 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_8UjNeG", "button_FmUCbL"]
+                  "block_order": [
+                    "text_8UjNeG",
+                    "button_FmUCbL"
+                  ]
                 }
               },
-              "block_order": ["group_Y6pbmc"]
+              "block_order": [
+                "group_Y6pbmc"
+              ]
             }
           },
-          "block_order": ["group_k9PBMX"]
+          "block_order": [
+            "group_k9PBMX"
+          ]
         },
         "static-lookbook": {
           "type": "_lookbook",
@@ -2296,7 +2337,10 @@
                 "spacer_L7cdrJ": {
                   "type": "spacer",
                   "name": "t:names.spacer",
-                  "settings": { "spacer_height": 100, "spacer_width": 0 },
+                  "settings": {
+                    "spacer_height": 100,
+                    "spacer_width": 0
+                  },
                   "blocks": {}
                 },
                 "button_mKYGV3": {
@@ -2352,10 +2396,15 @@
               ]
             }
           },
-          "block_order": ["lookbook_item_cUNxE6", "lookbook_row_6n8gfq"]
+          "block_order": [
+            "lookbook_item_cUNxE6",
+            "lookbook_row_6n8gfq"
+          ]
         }
       },
-      "block_order": ["marquee_circle_yiMdAj"],
+      "block_order": [
+        "marquee_circle_yiMdAj"
+      ],
       "name": "Lookbook",
       "settings": {
         "content_direction": "column",
@@ -2666,10 +2715,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["button_rze9RR"]
+                  "block_order": [
+                    "button_rze9RR"
+                  ]
                 }
               },
-              "block_order": ["group_basic_DryXR8"]
+              "block_order": [
+                "group_basic_DryXR8"
+              ]
             },
             "group_cqeNpC": {
               "type": "group",
@@ -2834,13 +2887,20 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["button_8N9CJd"]
+                  "block_order": [
+                    "button_8N9CJd"
+                  ]
                 }
               },
-              "block_order": ["group_basic_X3XYwV"]
+              "block_order": [
+                "group_basic_X3XYwV"
+              ]
             }
           },
-          "block_order": ["group_PKPLG8", "group_cqeNpC"]
+          "block_order": [
+            "group_PKPLG8",
+            "group_cqeNpC"
+          ]
         }
       },
       "name": "Collection list",
@@ -3216,10 +3276,16 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_bNxiQn", "rating_ACzEwL"]
+                  "block_order": [
+                    "text_bNxiQn",
+                    "rating_ACzEwL"
+                  ]
                 }
               },
-              "block_order": ["text_DVgFfw", "group_basic_R7N93V"]
+              "block_order": [
+                "text_DVgFfw",
+                "group_basic_R7N93V"
+              ]
             },
             "testimonial_item_g3FwG3": {
               "type": "_testimonial-item",
@@ -3492,10 +3558,16 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_dVXK8t", "rating_KWzUUQ"]
+                  "block_order": [
+                    "text_dVXK8t",
+                    "rating_KWzUUQ"
+                  ]
                 }
               },
-              "block_order": ["text_mfccGt", "group_basic_McqEPj"]
+              "block_order": [
+                "text_mfccGt",
+                "group_basic_McqEPj"
+              ]
             },
             "testimonial_item_3RdfJJ": {
               "type": "_testimonial-item",
@@ -3768,10 +3840,16 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_6jNHF7", "rating_fDdrPh"]
+                  "block_order": [
+                    "text_6jNHF7",
+                    "rating_fDdrPh"
+                  ]
                 }
               },
-              "block_order": ["text_VwPFzk", "group_basic_Miki4T"]
+              "block_order": [
+                "text_VwPFzk",
+                "group_basic_Miki4T"
+              ]
             }
           },
           "block_order": [
@@ -3781,7 +3859,9 @@
           ]
         }
       },
-      "block_order": ["testimonial_ndDeXn"],
+      "block_order": [
+        "testimonial_ndDeXn"
+      ],
       "name": "Testimonial",
       "settings": {
         "content_direction": "column",
@@ -4126,13 +4206,21 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["text_PjrjUG", "text_7V47r4", "button_6ePAe7"]
+              "block_order": [
+                "text_PjrjUG",
+                "text_7V47r4",
+                "button_6ePAe7"
+              ]
             }
           },
-          "block_order": ["group_basic_8dcETY"]
+          "block_order": [
+            "group_basic_8dcETY"
+          ]
         }
       },
-      "block_order": ["group_gCB4FV"],
+      "block_order": [
+        "group_gCB4FV"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -4262,7 +4350,10 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_ieAa8P", "icon_CAe8n4"],
+      "block_order": [
+        "text_ieAa8P",
+        "icon_CAe8n4"
+      ],
       "name": "t:names.marquee",
       "settings": {
         "movement_direction": "reverse",
@@ -4543,10 +4634,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_h7mDPM"]
+                  "block_order": [
+                    "text_h7mDPM"
+                  ]
                 }
               },
-              "block_order": ["content_hover_qqR9kp"]
+              "block_order": [
+                "content_hover_qqR9kp"
+              ]
             },
             "instagram_item_UtDFRj": {
               "type": "_instagram-item",
@@ -4691,10 +4786,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_kDEXkB"]
+                  "block_order": [
+                    "text_kDEXkB"
+                  ]
                 }
               },
-              "block_order": ["content_hover_BXVHN7"]
+              "block_order": [
+                "content_hover_BXVHN7"
+              ]
             },
             "instagram_item_YLG76c": {
               "type": "_instagram-item",
@@ -4839,10 +4938,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_rfyQTX"]
+                  "block_order": [
+                    "text_rfyQTX"
+                  ]
                 }
               },
-              "block_order": ["content_hover_9ifPyJ"]
+              "block_order": [
+                "content_hover_9ifPyJ"
+              ]
             },
             "instagram_item_3MEgYc": {
               "type": "_instagram-item",
@@ -4987,10 +5090,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_dhKiBE"]
+                  "block_order": [
+                    "text_dhKiBE"
+                  ]
                 }
               },
-              "block_order": ["content_hover_tqwmiY"]
+              "block_order": [
+                "content_hover_tqwmiY"
+              ]
             },
             "instagram_item_hwV8NQ": {
               "type": "_instagram-item",
@@ -5135,10 +5242,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_aKQhp8"]
+                  "block_order": [
+                    "text_aKQhp8"
+                  ]
                 }
               },
-              "block_order": ["content_hover_UefBC8"]
+              "block_order": [
+                "content_hover_UefBC8"
+              ]
             },
             "instagram_item_negR6n": {
               "type": "_instagram-item",
@@ -5283,10 +5394,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_KEY9B8"]
+                  "block_order": [
+                    "text_KEY9B8"
+                  ]
                 }
               },
-              "block_order": ["content_hover_jB7YL8"]
+              "block_order": [
+                "content_hover_jB7YL8"
+              ]
             },
             "instagram_item_bpCqmU": {
               "type": "_instagram-item",
@@ -5431,10 +5546,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_9bJ6gR"]
+                  "block_order": [
+                    "text_9bJ6gR"
+                  ]
                 }
               },
-              "block_order": ["content_hover_feHaGL"]
+              "block_order": [
+                "content_hover_feHaGL"
+              ]
             },
             "instagram_item_3Rmm3Q": {
               "type": "_instagram-item",
@@ -5579,10 +5698,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_CDqBgJ"]
+                  "block_order": [
+                    "text_CDqBgJ"
+                  ]
                 }
               },
-              "block_order": ["content_hover_FByrw6"]
+              "block_order": [
+                "content_hover_FByrw6"
+              ]
             },
             "instagram_item_caxXr9": {
               "type": "_instagram-item",
@@ -5727,10 +5850,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_TqBiTK"]
+                  "block_order": [
+                    "text_TqBiTK"
+                  ]
                 }
               },
-              "block_order": ["content_hover_fr7tQX"]
+              "block_order": [
+                "content_hover_fr7tQX"
+              ]
             },
             "instagram_item_Pd6Rdt": {
               "type": "_instagram-item",
@@ -5875,10 +6002,14 @@
                       "blocks": {}
                     }
                   },
-                  "block_order": ["text_V8Q4FQ"]
+                  "block_order": [
+                    "text_V8Q4FQ"
+                  ]
                 }
               },
-              "block_order": ["content_hover_gnfcYG"]
+              "block_order": [
+                "content_hover_gnfcYG"
+              ]
             }
           },
           "block_order": [
@@ -6042,9 +6173,14 @@
         "padding-block-start": 24,
         "padding-block-end": 24
       }
+    },
+    "hero_redy_main": {
+      "type": "hero-redy",
+      "settings": {}
     }
   },
   "order": [
+    "hero_redy_main",
     "slideshow_tyrRgz",
     "collection_list_NRwJx3",
     "section_7hRDd8",

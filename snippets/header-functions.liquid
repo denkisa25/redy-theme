@@ -122,6 +122,10 @@
   </a>
 {%- endif -%}
 
+{%- unless extra_class contains 'lg:none' -%}
+  <a href="{{ routes.all_products_collection_url }}" class="redy-nav-cta" aria-label="Поръчай сега">Поръчай</a>
+{%- endunless -%}
+
 {%- if enable_cart and settings.cart_type != 'none' -%}
   {%- if settings.cart_type == 'drawer' -%}
     <noscript>

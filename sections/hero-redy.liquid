@@ -1,0 +1,228 @@
+{%- assign product = section.settings.product -%}
+
+<section class="redy-hero" id="hero">
+
+  <div class="redy-hero__blob redy-hero__blob--1"></div>
+  <div class="redy-hero__blob redy-hero__blob--2"></div>
+  <div class="redy-hero__blob redy-hero__blob--3"></div>
+  <div class="redy-hero__blob redy-hero__blob--4"></div>
+  <div class="redy-hero__blob redy-hero__blob--5"></div>
+  <div class="redy-hero__blob redy-hero__blob--6"></div>
+  <div class="redy-hero__blob redy-hero__blob--7"></div>
+
+  <div class="redy-hero__content">
+    <div class="redy-hero__eyebrow">{{ section.settings.eyebrow }}</div>
+
+    <h1 class="redy-hero__title">
+      {{ section.settings.heading_before }}<br>
+      <em>{{ section.settings.heading_em }}</em>&nbsp;<span class="redy-hero__script">{{ section.settings.heading_script }}</span>
+    </h1>
+
+    <p class="redy-hero__lead">{{ section.settings.lead }}</p>
+
+    <div class="redy-hero__actions">
+      <a href="{{ section.settings.cta_url }}" class="redy-btn redy-btn--primary">
+        {{ section.settings.cta_label }}<span aria-hidden="true" class="redy-btn__arrow">→</span>
+      </a>
+      {%- if section.settings.ghost_label != blank -%}
+        <a href="{{ section.settings.ghost_url }}" class="redy-btn redy-btn--ghost">
+          {{ section.settings.ghost_label }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    <div class="redy-hero__trust">
+      {%- for i in (1..3) -%}
+        {%- assign trust_key = 'trust_' | append: i -%}
+        {%- assign color_key = 'trust_color_' | append: i -%}
+        {%- if section.settings[trust_key] != blank -%}
+          <div class="redy-trust-item">
+            <span class="redy-trust-dot redy-trust-dot--{{ section.settings[color_key] }}"></span>
+            {{ section.settings[trust_key] }}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <div class="redy-hero__card">
+    <div class="redy-hero__card-top">
+      <div class="redy-hero__card-tag">{{ section.settings.card_tag }}</div>
+      <div class="redy-hero__card-name">
+        {{ section.settings.card_name_before }}<br><em>{{ section.settings.card_name_em }}</em>
+      </div>
+    </div>
+    <div class="redy-hero__card-visual">
+      <div class="redy-hero__product-box">
+        <div class="redy-mark redy-mark--lg">
+          <span class="redy-mark__dot"></span>
+          <span class="redy-mark__text">Redy</span>
+        </div>
+      </div>
+    </div>
+    <div class="redy-hero__card-foot">
+      <div class="redy-hero__price">
+        {%- if product != blank -%}
+          {{ product.price | money_without_trailing_zeros }}
+        {%- else -%}
+          49 {{ section.settings.currency }}
+        {%- endif -%}
+      </div>
+      <div class="redy-hero__card-meta">{{ section.settings.card_meta | newline_to_br }}</div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Hero Redy",
+  "tag": "section",
+  "class": "redy-hero-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Първа серия · От майка за майки"
+    },
+    {
+      "type": "text",
+      "id": "heading_before",
+      "label": "Heading — first line",
+      "default": "Когато моментът дойде,"
+    },
+    {
+      "type": "text",
+      "id": "heading_em",
+      "label": "Heading — italic part",
+      "default": "тя е"
+    },
+    {
+      "type": "text",
+      "id": "heading_script",
+      "label": "Heading — script word",
+      "default": "Redy."
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Lead paragraph",
+      "default": "Първата кутия за първия цикъл — внимателно подбрана, нежно обяснена, спокойно поднесена. За да започне разговорът, който ще я води дълго след това."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA button label",
+      "default": "Поръчай за 49 лв"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA button link"
+    },
+    {
+      "type": "text",
+      "id": "ghost_label",
+      "label": "Ghost link label",
+      "default": "Защо я създадох"
+    },
+    {
+      "type": "url",
+      "id": "ghost_url",
+      "label": "Ghost link"
+    },
+    {
+      "type": "text",
+      "id": "trust_1",
+      "label": "Trust item 1",
+      "default": "Био конопени превръзки"
+    },
+    {
+      "type": "select",
+      "id": "trust_color_1",
+      "label": "Trust dot 1",
+      "options": [
+        { "value": "red",      "label": "Red"      },
+        { "value": "peach",    "label": "Peach"    },
+        { "value": "lavender", "label": "Lavender" }
+      ],
+      "default": "red"
+    },
+    {
+      "type": "text",
+      "id": "trust_2",
+      "label": "Trust item 2",
+      "default": "Безплатна доставка над 60 лв"
+    },
+    {
+      "type": "select",
+      "id": "trust_color_2",
+      "label": "Trust dot 2",
+      "options": [
+        { "value": "red",      "label": "Red"      },
+        { "value": "peach",    "label": "Peach"    },
+        { "value": "lavender", "label": "Lavender" }
+      ],
+      "default": "peach"
+    },
+    {
+      "type": "text",
+      "id": "trust_3",
+      "label": "Trust item 3",
+      "default": "Купи една — даряваш една"
+    },
+    {
+      "type": "select",
+      "id": "trust_color_3",
+      "label": "Trust dot 3",
+      "options": [
+        { "value": "red",      "label": "Red"      },
+        { "value": "peach",    "label": "Peach"    },
+        { "value": "lavender", "label": "Lavender" }
+      ],
+      "default": "lavender"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product (for live price)"
+    },
+    {
+      "type": "text",
+      "id": "currency",
+      "label": "Currency label (fallback)",
+      "default": "лв"
+    },
+    {
+      "type": "text",
+      "id": "card_tag",
+      "label": "Product card tag",
+      "default": "Серия 01 · Limited"
+    },
+    {
+      "type": "text",
+      "id": "card_name_before",
+      "label": "Product card name — first line",
+      "default": "Първата"
+    },
+    {
+      "type": "text",
+      "id": "card_name_em",
+      "label": "Product card name — italic line",
+      "default": "кутия"
+    },
+    {
+      "type": "text",
+      "id": "card_meta",
+      "label": "Product card meta text",
+      "default": "Ръчно опакована\nв София"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Redy"
+    }
+  ]
+}
+{% endschema %}
