@@ -1,5 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "hero_redy_main": {
+      "type": "hero-redy",
+      "settings": {
+        "eyebrow": "Първа серия · От майка за майки",
+        "heading_before": "Когато моментът дойде,",
+        "heading_em": "тя е",
+        "heading_script": "Redy.",
+        "lead": "Първата кутия за първия цикъл — внимателно подбрана, нежно обяснена, спокойно поднесена. За да започне разговорът, който ще я води дълго след това.",
+        "cta_label": "Поръчай за 49 лв",
+        "cta_url": "",
+        "ghost_label": "Защо я създадох",
+        "ghost_url": "",
+        "trust_1": "Био конопени превръзки",
+        "trust_color_1": "red",
+        "trust_2": "Безплатна доставка над 60 лв",
+        "trust_color_2": "peach",
+        "trust_3": "Купи една — даряваш една",
+        "trust_color_3": "lavender",
+        "product": "",
+        "currency": "лв",
+        "card_tag": "Серия 01 · Limited",
+        "card_name_before": "Първата",
+        "card_name_em": "кутия",
+        "card_meta": "Ръчно опакована\nв София"
+      }
+    },
+    "statement_redy_main": {
+      "type": "statement-quote",
+      "settings": {
+        "line_1": "Първата менструация не е просто биологично събитие.",
+        "line_2_prefix": "Тя е",
+        "line_2_em": "момент,",
+        "line_3": "който остава в паметта за години.",
+        "attr": "— Защо Redy съществува"
+      }
+    },
+    "box_contents_main": {
+      "type": "box-contents",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "num": "01 / Сърцевината",
+            "title": "Брошура „Когато тялото ти пораства“",
+            "text": "Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.",
+            "style": "feat"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "num": "02",
+            "title": "Био превръзки",
+            "text": "Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.",
+            "style": "default"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "num": "03",
+            "title": "Несесер",
+            "text": "Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.",
+            "style": "cream"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "num": "04",
+            "title": "Картичка",
+            "text": "„Ти си Redy.“ Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.",
+            "style": "peach"
+          }
+        },
+        "card_5": {
+          "type": "card",
+          "settings": {
+            "num": "05",
+            "title": "Топъл чай",
+            "text": "Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.",
+            "style": "lavender"
+          }
+        },
+        "card_6": {
+          "type": "card",
+          "settings": {
+            "num": "06 / Бонус",
+            "title": "Наръчник за родителя",
+            "text": "Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.",
+            "style": "dark"
+          }
+        },
+        "card_7": {
+          "type": "card",
+          "settings": {
+            "num": "07",
+            "title": "QR код към ресурси",
+            "text": "Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.",
+            "style": "default"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4",
+        "card_5",
+        "card_6",
+        "card_7"
+      ],
+      "settings": {
+        "tag": "Какво има вътре",
+        "heading_line_1": "Всичко, което трябва.",
+        "heading_line_2": "Нищо, което плаши.",
+        "subheading": "Кутията е малка вселена от грижа — практичните неща са там, но емоционалните също. Защото тя ще има нужда и от двете."
+      }
+    },
+    "founder_story_main": {
+      "type": "founder-story",
+      "settings": {
+        "img_text": "от майка\nза майки",
+        "tag": "Защо Redy",
+        "heading_before_em_1": "Скоро дъщеря ми ще има",
+        "heading_em_1": "първия си цикъл.",
+        "heading_mid": "Започнах с кутия за нея.",
+        "heading_before_em_2": "Превърна се в кутия",
+        "heading_em_2": "за нашите дъщери.",
+        "para_1": "Когато започнах да се подготвям за този разговор, осъзнах нещо — не се страхувам от темата. Страхувам се да не я направя по-голяма, отколкото е.",
+        "para_2": "Поколения преди нас го получаваха като шепот в кухнята. Като нещо, което се крие в чантата. Като „тайна“. Не искам това за дъщеря ми. Не искам това за никое момиче.",
+        "para_3": "Redy не е активизъм. Redy е спокойствие. Първата кутия е за нея — но и за нас, майките, които искаме разговорът да започне правилно.",
+        "sig_name": "Анна",
+        "sig_full_name": "Анна Г.",
+        "sig_role": "основател на Redy · майка на Виктория"
+      }
+    },
+    "donation_cta_main": {
+      "type": "donation-cta",
+      "settings": {
+        "heading_line_1": "Бъди готова",
+        "heading_line_2_prefix": "преди тя да е",
+        "heading_line_2_em": "готова.",
+        "body": "Първа серия — 50 кутии, ръчно опаковани в София. Поръчай сега и получи безплатно лично писмо с името на дъщеря ти.",
+        "cta_label": "Поръчай първата кутия — 49 лв",
+        "cta_url": ""
+      }
+    },
+    "faq_redy_main": {
+      "type": "faq-redy",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "На каква възраст е подходяща кутията?",
+            "answer": "За момичета между 9 и 13 години — но няма правило. Подаряваме я около 9–10 г. възраст, за да е готова преди да я изненада. Тонът е премерен — не плаши малките, не звучи детски на по-големите."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Подходяща ли е, ако тя още няма цикъл?",
+            "answer": "Точно затова е създадена. Кутията се отваря преди първата менструация — за подготовка. Така моментът, когато дойде, не е изненада, а нещо познато."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Защо био превръзки?",
+            "answer": "Конопените био превръзки нямат хлор, аромати и синтетични влакна. Дишат. По-добри са за чувствителна кожа и за околната среда. Първото докосване с този продукт има значение."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Какво включва моделът „купи една — даряваш една“?",
+            "answer": "За всяка продадена кутия даряваме една на момиче без достъп — чрез партньорства с училища и социални служби. Прозрачен брой, ежемесечен отчет на сайта."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Доставка и връщане?",
+            "answer": "Доставка с Еконт за 1–2 работни дни в цяла България. Безплатна над 60 лв. Връщане в 14 дни, ако кутията е неразопакована."
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "Може ли подарък за рожден ден / кръщелница?",
+            "answer": "Да — много майки и кръстници избират Redy точно за такъв повод. Имаме опция за лично послание на картичката."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
+      "settings": {
+        "tag": "Често",
+        "heading_line_1": "Въпроси,",
+        "heading_before_em": "които",
+        "heading_em": "чувам най-често.",
+        "contact_note": "Ако твоят го няма тук — пиши ми лично на hi@redy.one."
+      }
+    },
     "slideshow_tyrRgz": {
       "type": "slideshow",
       "blocks": {
@@ -13,8 +232,6 @@
             "container": "page-width page-width--full",
             "height": "fit",
             "media_type_1": "video",
-            "image_1": "",
-            "image_mb_1": "",
             "inherit_color_scheme": true,
             "scheme_background": "#ffffff",
             "scheme_background_gradient": "",
@@ -32,6 +249,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -65,6 +284,7 @@
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "content_overlay": false,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -106,6 +326,8 @@
                   "settings": {
                     "link": "",
                     "open_in_new_tab": false,
+                    "hide_on_tablet": false,
+                    "hide_on_mobile": false,
                     "content_direction": "column",
                     "content_direction_mobile": "column",
                     "horizontal_alignment": "flex-start",
@@ -139,6 +361,7 @@
                     "video_position": "cover",
                     "background_image_position": "cover",
                     "content_overlay": false,
+                    "content_match_height": false,
                     "image_ratio": "adapt",
                     "border": "none",
                     "border_width": 1,
@@ -179,6 +402,8 @@
                       "name": "t:names.heading",
                       "settings": {
                         "text": "<h2>Timeless Style for Modern Lives</h2>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -186,6 +411,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -196,6 +422,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "custom",
                         "unit": "percent",
                         "custom_width": 60,
@@ -220,6 +452,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-heading--family)",
                         "font_size": "6.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "uppercase",
@@ -227,6 +460,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -258,8 +492,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -268,6 +504,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -310,6 +547,7 @@
       "block_order": [
         "slide_3UKqHy"
       ],
+      "disabled": true,
       "name": "Slideshow",
       "settings": {
         "slideshow_type": "default",
@@ -366,8 +604,7 @@
         "color_scheme_mobile": "scheme-9",
         "padding-block-start": 0,
         "padding-block-end": 0
-      },
-      "disabled": true
+      }
     },
     "collection_list_NRwJx3": {
       "type": "collection-list",
@@ -492,6 +729,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -523,9 +762,9 @@
                 "scheme_shadow": "#000000",
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "content_overlay": true,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -616,8 +855,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -626,6 +867,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -664,6 +906,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -695,9 +939,9 @@
                 "scheme_shadow": "#000000",
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "content_overlay": true,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -788,8 +1032,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -798,6 +1044,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -836,6 +1083,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -867,9 +1116,9 @@
                 "scheme_shadow": "#000000",
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "content_overlay": true,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -960,8 +1209,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -970,6 +1221,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -1010,6 +1262,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Collection list",
       "settings": {
         "content_direction": "column",
@@ -1038,8 +1291,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      },
-      "disabled": true
+      }
     },
     "section_7hRDd8": {
       "type": "section",
@@ -1050,6 +1302,8 @@
           "settings": {
             "link": "",
             "open_in_new_tab": false,
+            "hide_on_tablet": false,
+            "hide_on_mobile": false,
             "content_direction": "row",
             "content_direction_mobile": "column",
             "horizontal_alignment": "space-between",
@@ -1083,6 +1337,7 @@
             "video_position": "cover",
             "background_image_position": "cover",
             "content_overlay": false,
+            "content_match_height": false,
             "image_ratio": "adapt",
             "border": "none",
             "border_width": 1,
@@ -1123,6 +1378,8 @@
               "name": "t:names.heading",
               "settings": {
                 "text": "<h3><strong>Best seller</strong></h3>",
+                "collection_description_only": false,
+                "collapse_text": false,
                 "typing_text": false,
                 "primary_text": "Welcome to our store!",
                 "secondary_text": "Exclusive offers just for you.",
@@ -1130,6 +1387,7 @@
                 "highlight_text": false,
                 "highlight_text_content": "",
                 "highlight_text_type": "text",
+                "underline_width": 100,
                 "underline_height": 18,
                 "underline_offset": -20,
                 "highlight_text_color": "#000000",
@@ -1140,6 +1398,12 @@
                 "spacing_text_right": 0,
                 "stroke_text": false,
                 "stroke_text_content": "",
+                "sticky_text": false,
+                "sticky_text_color": "#ffffff",
+                "mix_blend_mode": false,
+                "text_box_trim": false,
+                "enable_rotation": false,
+                "rotate": 0,
                 "width": "100%",
                 "unit": "percent",
                 "custom_width": 100,
@@ -1164,6 +1428,7 @@
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "4.0rem",
+                "font_weight": "default",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -1171,6 +1436,7 @@
                 "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
+                "background_gradient": "",
                 "enable_border": false,
                 "enable_border_bottom": false,
                 "border": "none",
@@ -1195,6 +1461,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "row",
                 "content_direction_mobile": "row",
                 "horizontal_alignment": "flex-end",
@@ -1228,6 +1496,7 @@
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "content_overlay": false,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -1276,8 +1545,10 @@
                     "button_border_radius": 100,
                     "button_type_font": "var(--font-body--family)",
                     "button_type_size": "1.2rem",
+                    "button_type_line_height": "normal",
                     "button_font_weight": "default",
                     "button_text_case": "default",
+                    "button_type_alignment": "center",
                     "buttons_shadow_horizontal_offset": 0,
                     "buttons_shadow_vertical_offset": 0,
                     "buttons_shadow_blur": 0,
@@ -1286,6 +1557,7 @@
                     "case": "uppercase",
                     "wrap": "nowrap",
                     "font_style": "normal",
+                    "color": "var(--color-foreground)",
                     "link_underline": true,
                     "link_hover_underline": true,
                     "link_reveal": false,
@@ -1321,8 +1593,10 @@
                     "button_border_radius": 100,
                     "button_type_font": "var(--font-body--family)",
                     "button_type_size": "1.2rem",
+                    "button_type_line_height": "normal",
                     "button_font_weight": "default",
                     "button_text_case": "default",
+                    "button_type_alignment": "center",
                     "buttons_shadow_horizontal_offset": 0,
                     "buttons_shadow_vertical_offset": 0,
                     "buttons_shadow_blur": 0,
@@ -1331,6 +1605,7 @@
                     "case": "uppercase",
                     "wrap": "nowrap",
                     "font_style": "normal",
+                    "color": "var(--color-foreground)",
                     "link_underline": true,
                     "link_hover_underline": true,
                     "link_reveal": false,
@@ -1383,9 +1658,18 @@
             "product_grid_type": "carousel",
             "columns_gap": 0,
             "rows_gap": 0,
+            "custom_gap_mb": false,
+            "columns_gap_mb": 8,
+            "custom_block_postion": false,
+            "custom_block_width": "full",
+            "horizontal_position": 0,
+            "vertical_position": 0,
             "navigation": "arrows-pagination",
             "arrows_position": "inside",
+            "arrow_horizontal_position": 0,
             "pagination_type": "progressbar",
+            "always_show_swiper_button": false,
+            "show_fraction_on_arrow": false,
             "dots_top_offset": 40,
             "progress_top_offset": 40,
             "progressbar_left": 75,
@@ -1421,6 +1705,7 @@
                 "gap": 12,
                 "width": "fill",
                 "custom_width": 100,
+                "height": "fit-content",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -1433,8 +1718,11 @@
                     "product": "{{ closest.product }}",
                     "image_ratio": "adapt",
                     "show_secondary_image": true,
+                    "show_badges": true,
                     "width_option": "full",
+                    "unit": "percent",
                     "custom_width": 80,
+                    "custom_width_pixel": 90,
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
@@ -1486,6 +1774,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -1506,6 +1795,7 @@
                         "alignment": "left",
                         "font": "var(--font-body--family)",
                         "font_size": "1.8rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -1536,6 +1826,7 @@
         "group_rgNmqd",
         "product_grid_fmCedc"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -1570,8 +1861,7 @@
         "padding-block-end": 40,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      },
-      "disabled": true
+      }
     },
     "lookbook_q8nVmX": {
       "type": "lookbook",
@@ -1640,7 +1930,6 @@
             "scheme_shadow": "#000000",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "",
             "background_image_position": "cover",
             "content_overlay": true,
             "image_ratio": "adapt",
@@ -1683,6 +1972,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -1716,6 +2007,7 @@
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "content_overlay": false,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -1757,6 +2049,8 @@
                   "settings": {
                     "link": "",
                     "open_in_new_tab": false,
+                    "hide_on_tablet": false,
+                    "hide_on_mobile": false,
                     "content_direction": "column",
                     "content_direction_mobile": "column",
                     "horizontal_alignment": "flex-start",
@@ -1790,6 +2084,7 @@
                     "video_position": "cover",
                     "background_image_position": "cover",
                     "content_overlay": false,
+                    "content_match_height": false,
                     "image_ratio": "adapt",
                     "border": "none",
                     "border_width": 1,
@@ -1830,6 +2125,8 @@
                       "name": "t:names.heading",
                       "settings": {
                         "text": "<h2>Minimalist Designs Crafted for her</h2>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -1837,6 +2134,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -1847,6 +2145,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "custom",
                         "unit": "pixel",
                         "custom_width": 60,
@@ -1871,6 +2175,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-heading--family)",
                         "font_size": "6.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "uppercase",
@@ -1878,6 +2183,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -1909,8 +2215,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -1919,6 +2227,7 @@
                         "case": "uppercase",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": true,
                         "link_hover_underline": false,
                         "link_reveal": false,
@@ -2008,7 +2317,6 @@
               "type": "_lookbook-item",
               "name": "Lookbook banner",
               "settings": {
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "hide_on_mobile": false,
@@ -2165,6 +2473,8 @@
                     "loop": false,
                     "navigation": "arrows",
                     "arrows_position": "bottom",
+                    "always_show_swiper_button": false,
+                    "show_fraction_on_arrow": false,
                     "pagination_type": "bullets",
                     "navigation_margin_top": 32,
                     "navigation_margin_bottom": 48,
@@ -2199,6 +2509,7 @@
                         "gap": 12,
                         "width": "fill",
                         "custom_width": 100,
+                        "height": "fit-content",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -2212,8 +2523,11 @@
                             "product": "{{ closest.product }}",
                             "image_ratio": "adapt",
                             "show_secondary_image": true,
+                            "show_badges": true,
                             "width_option": "full",
+                            "unit": "percent",
                             "custom_width": 80,
+                            "custom_width_pixel": 90,
                             "border": "none",
                             "border_width": 1,
                             "border_opacity": 100,
@@ -2268,6 +2582,7 @@
                                 "type_preset": "custom",
                                 "font": "var(--font-body--family)",
                                 "font_size": "2.4rem",
+                                "weight": "default",
                                 "line_height": "normal",
                                 "letter_spacing": "normal",
                                 "case": "none",
@@ -2289,6 +2604,7 @@
                                 "alignment": "left",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1.8rem",
+                                "font_weight": "default",
                                 "line_height": "normal",
                                 "letter_spacing": "normal",
                                 "case": "none",
@@ -2342,7 +2658,8 @@
                   "name": "t:names.spacer",
                   "settings": {
                     "spacer_height": 100,
-                    "spacer_width": 0
+                    "spacer_width": 0,
+                    "hide_on_mobile": false
                   },
                   "blocks": {}
                 },
@@ -2359,8 +2676,10 @@
                     "button_border_radius": 100,
                     "button_type_font": "var(--font-body--family)",
                     "button_type_size": "1.2rem",
+                    "button_type_line_height": "normal",
                     "button_font_weight": "default",
                     "button_text_case": "default",
+                    "button_type_alignment": "center",
                     "buttons_shadow_horizontal_offset": 0,
                     "buttons_shadow_vertical_offset": 0,
                     "buttons_shadow_blur": 0,
@@ -2369,6 +2688,7 @@
                     "case": "uppercase",
                     "wrap": "pretty",
                     "font_style": "normal",
+                    "color": "var(--color-foreground)",
                     "link_underline": true,
                     "link_hover_underline": false,
                     "link_reveal": false,
@@ -2408,6 +2728,7 @@
       "block_order": [
         "marquee_circle_yiMdAj"
       ],
+      "disabled": true,
       "name": "Lookbook",
       "settings": {
         "content_direction": "column",
@@ -2436,8 +2757,7 @@
         "image_behavior": "none",
         "padding-block-start": 0,
         "padding-block-end": 0
-      },
-      "disabled": true
+      }
     },
     "collection_list_jUH9xq": {
       "type": "collection-list",
@@ -2562,6 +2882,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -2593,9 +2915,9 @@
                 "scheme_shadow": "#000000",
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "content_overlay": true,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -2686,8 +3008,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -2696,6 +3020,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -2734,6 +3059,8 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
+                "hide_on_tablet": false,
+                "hide_on_mobile": false,
                 "content_direction": "column",
                 "content_direction_mobile": "column",
                 "horizontal_alignment": "flex-start",
@@ -2765,9 +3092,9 @@
                 "scheme_shadow": "#000000",
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "content_overlay": true,
+                "content_match_height": false,
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -2858,8 +3185,10 @@
                         "button_border_radius": 100,
                         "button_type_font": "var(--font-body--family)",
                         "button_type_size": "1.2rem",
+                        "button_type_line_height": "normal",
                         "button_font_weight": "default",
                         "button_text_case": "default",
+                        "button_type_alignment": "center",
                         "buttons_shadow_horizontal_offset": 0,
                         "buttons_shadow_vertical_offset": 0,
                         "buttons_shadow_blur": 0,
@@ -2868,6 +3197,7 @@
                         "case": "none",
                         "wrap": "pretty",
                         "font_style": "normal",
+                        "color": "var(--color-foreground)",
                         "link_underline": false,
                         "link_hover_underline": true,
                         "link_reveal": false,
@@ -2907,6 +3237,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Collection list",
       "settings": {
         "content_direction": "column",
@@ -2935,8 +3266,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      },
-      "disabled": true
+      }
     },
     "section_XMawhC": {
       "type": "section",
@@ -3075,6 +3405,8 @@
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>“Effortless style, timeless appeal. Every garment is designed with precision to bring confidence, comfort, and contemporary elegance to your wardrobe.”</p>",
+                    "collection_description_only": false,
+                    "collapse_text": false,
                     "typing_text": false,
                     "primary_text": "Welcome to our store!",
                     "secondary_text": "Exclusive offers just for you.",
@@ -3082,6 +3414,7 @@
                     "highlight_text": false,
                     "highlight_text_content": "",
                     "highlight_text_type": "text",
+                    "underline_width": 100,
                     "underline_height": 18,
                     "underline_offset": -20,
                     "highlight_text_color": "#000000",
@@ -3092,6 +3425,12 @@
                     "spacing_text_right": 0,
                     "stroke_text": false,
                     "stroke_text_content": "",
+                    "sticky_text": false,
+                    "sticky_text_color": "#ffffff",
+                    "mix_blend_mode": false,
+                    "text_box_trim": false,
+                    "enable_rotation": false,
+                    "rotate": 0,
                     "width": "custom",
                     "unit": "pixel",
                     "custom_width": 90,
@@ -3116,6 +3455,7 @@
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "3.2rem",
+                    "font_weight": "default",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -3123,6 +3463,7 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "background_gradient": "",
                     "enable_border": false,
                     "enable_border_bottom": false,
                     "border": "none",
@@ -3188,6 +3529,8 @@
                       "name": "t:names.heading",
                       "settings": {
                         "text": "<p>Victoria Jenny</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -3195,6 +3538,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -3205,6 +3549,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -3229,6 +3579,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -3236,6 +3587,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -3357,6 +3709,8 @@
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>“Effortless style, timeless appeal. Every garment is designed with precision to bring confidence, comfort, and contemporary elegance to your wardrobe.”</p>",
+                    "collection_description_only": false,
+                    "collapse_text": false,
                     "typing_text": false,
                     "primary_text": "Welcome to our store!",
                     "secondary_text": "Exclusive offers just for you.",
@@ -3364,6 +3718,7 @@
                     "highlight_text": false,
                     "highlight_text_content": "",
                     "highlight_text_type": "text",
+                    "underline_width": 100,
                     "underline_height": 18,
                     "underline_offset": -20,
                     "highlight_text_color": "#000000",
@@ -3374,6 +3729,12 @@
                     "spacing_text_right": 0,
                     "stroke_text": false,
                     "stroke_text_content": "",
+                    "sticky_text": false,
+                    "sticky_text_color": "#ffffff",
+                    "mix_blend_mode": false,
+                    "text_box_trim": false,
+                    "enable_rotation": false,
+                    "rotate": 0,
                     "width": "custom",
                     "unit": "pixel",
                     "custom_width": 90,
@@ -3398,6 +3759,7 @@
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "3.2rem",
+                    "font_weight": "default",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -3405,6 +3767,7 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "background_gradient": "",
                     "enable_border": false,
                     "enable_border_bottom": false,
                     "border": "none",
@@ -3470,6 +3833,8 @@
                       "name": "t:names.heading",
                       "settings": {
                         "text": "<p>Victoria Jenny</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -3477,6 +3842,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -3487,6 +3853,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -3511,6 +3883,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -3518,6 +3891,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -3639,6 +4013,8 @@
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>“Effortless style, timeless appeal. Every garment is designed with precision to bring confidence, comfort, and contemporary elegance to your wardrobe.”</p>",
+                    "collection_description_only": false,
+                    "collapse_text": false,
                     "typing_text": false,
                     "primary_text": "Welcome to our store!",
                     "secondary_text": "Exclusive offers just for you.",
@@ -3646,6 +4022,7 @@
                     "highlight_text": false,
                     "highlight_text_content": "",
                     "highlight_text_type": "text",
+                    "underline_width": 100,
                     "underline_height": 18,
                     "underline_offset": -20,
                     "highlight_text_color": "#000000",
@@ -3656,6 +4033,12 @@
                     "spacing_text_right": 0,
                     "stroke_text": false,
                     "stroke_text_content": "",
+                    "sticky_text": false,
+                    "sticky_text_color": "#ffffff",
+                    "mix_blend_mode": false,
+                    "text_box_trim": false,
+                    "enable_rotation": false,
+                    "rotate": 0,
                     "width": "custom",
                     "unit": "pixel",
                     "custom_width": 90,
@@ -3680,6 +4063,7 @@
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "3.2rem",
+                    "font_weight": "default",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -3687,6 +4071,7 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "background_gradient": "",
                     "enable_border": false,
                     "enable_border_bottom": false,
                     "border": "none",
@@ -3752,6 +4137,8 @@
                       "name": "t:names.heading",
                       "settings": {
                         "text": "<p>Victoria Jenny</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -3759,6 +4146,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -3769,6 +4157,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -3793,6 +4187,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -3800,6 +4195,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -3867,6 +4263,7 @@
       "block_order": [
         "testimonial_ndDeXn"
       ],
+      "disabled": true,
       "name": "Testimonial",
       "settings": {
         "content_direction": "column",
@@ -3887,7 +4284,6 @@
         "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
-        "background_image": "",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -3902,8 +4298,7 @@
         "padding-block-end": 0,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      },
-      "disabled": true
+      }
     },
     "section_WzKJeK": {
       "type": "section",
@@ -3914,6 +4309,8 @@
           "settings": {
             "link": "",
             "open_in_new_tab": false,
+            "hide_on_tablet": false,
+            "hide_on_mobile": false,
             "content_direction": "column",
             "content_direction_mobile": "column",
             "horizontal_alignment": "flex-start",
@@ -3947,6 +4344,7 @@
             "video_position": "cover",
             "background_image_position": "cover",
             "content_overlay": false,
+            "content_match_height": false,
             "image_ratio": "adapt",
             "border": "none",
             "border_width": 1,
@@ -4029,6 +4427,8 @@
                   "name": "t:names.text",
                   "settings": {
                     "text": "<p>07/14/25</p>",
+                    "collection_description_only": false,
+                    "collapse_text": false,
                     "typing_text": false,
                     "primary_text": "Welcome to our store!",
                     "secondary_text": "Exclusive offers just for you.",
@@ -4036,6 +4436,7 @@
                     "highlight_text": false,
                     "highlight_text_content": "",
                     "highlight_text_type": "text",
+                    "underline_width": 100,
                     "underline_height": 18,
                     "underline_offset": -20,
                     "highlight_text_color": "#000000",
@@ -4046,6 +4447,12 @@
                     "spacing_text_right": 0,
                     "stroke_text": false,
                     "stroke_text_content": "",
+                    "sticky_text": false,
+                    "sticky_text_color": "#ffffff",
+                    "mix_blend_mode": false,
+                    "text_box_trim": false,
+                    "enable_rotation": false,
+                    "rotate": 0,
                     "width": "fit-content",
                     "unit": "percent",
                     "custom_width": 100,
@@ -4070,6 +4477,7 @@
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
                     "font_size": "2.0rem",
+                    "font_weight": "default",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -4077,6 +4485,7 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "background_gradient": "",
                     "enable_border": false,
                     "enable_border_bottom": false,
                     "border": "none",
@@ -4100,6 +4509,8 @@
                   "name": "t:names.heading",
                   "settings": {
                     "text": "<p><strong>The Art of Everyday Elegance</strong></p>",
+                    "collection_description_only": false,
+                    "collapse_text": false,
                     "typing_text": false,
                     "primary_text": "Welcome to our store!",
                     "secondary_text": "Exclusive offers just for you.",
@@ -4107,6 +4518,7 @@
                     "highlight_text": false,
                     "highlight_text_content": "",
                     "highlight_text_type": "text",
+                    "underline_width": 100,
                     "underline_height": 18,
                     "underline_offset": -20,
                     "highlight_text_color": "#000000",
@@ -4117,6 +4529,12 @@
                     "spacing_text_right": 0,
                     "stroke_text": false,
                     "stroke_text_content": "",
+                    "sticky_text": false,
+                    "sticky_text_color": "#ffffff",
+                    "mix_blend_mode": false,
+                    "text_box_trim": false,
+                    "enable_rotation": false,
+                    "rotate": 0,
                     "width": "custom",
                     "unit": "pixel",
                     "custom_width": 43,
@@ -4141,6 +4559,7 @@
                     "type_preset": "custom",
                     "font": "var(--font-heading--family)",
                     "font_size": "6.0rem",
+                    "font_weight": "default",
                     "line_height": "loose",
                     "letter_spacing": "normal",
                     "case": "uppercase",
@@ -4148,6 +4567,7 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "background_gradient": "",
                     "enable_border": false,
                     "enable_border_bottom": false,
                     "border": "none",
@@ -4179,8 +4599,10 @@
                     "button_border_radius": 100,
                     "button_type_font": "var(--font-body--family)",
                     "button_type_size": "1.2rem",
+                    "button_type_line_height": "normal",
                     "button_font_weight": "default",
                     "button_text_case": "default",
+                    "button_type_alignment": "center",
                     "buttons_shadow_horizontal_offset": 0,
                     "buttons_shadow_vertical_offset": 0,
                     "buttons_shadow_blur": 0,
@@ -4189,6 +4611,7 @@
                     "case": "uppercase",
                     "wrap": "pretty",
                     "font_style": "normal",
+                    "color": "var(--color-foreground)",
                     "link_underline": true,
                     "link_hover_underline": false,
                     "link_reveal": false,
@@ -4227,6 +4650,7 @@
       "block_order": [
         "group_gCB4FV"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -4247,7 +4671,6 @@
         "color_scheme": "scheme-9",
         "background_media": "image",
         "video_position": "cover",
-        "background_image": "",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -4262,8 +4685,7 @@
         "padding-block-end": 0,
         "padding-inline-start": 0,
         "padding-inline-end": 0
-      },
-      "disabled": true
+      }
     },
     "marquee_cbrgCX": {
       "type": "marquee",
@@ -4272,6 +4694,8 @@
           "type": "text",
           "settings": {
             "text": "<p><strong>new arrivals</strong></p>",
+            "collection_description_only": false,
+            "collapse_text": false,
             "typing_text": false,
             "primary_text": "Welcome to our store!",
             "secondary_text": "Exclusive offers just for you.",
@@ -4279,6 +4703,7 @@
             "highlight_text": false,
             "highlight_text_content": "",
             "highlight_text_type": "text",
+            "underline_width": 100,
             "underline_height": 18,
             "underline_offset": -20,
             "highlight_text_color": "#000000",
@@ -4289,6 +4714,12 @@
             "spacing_text_right": 0,
             "stroke_text": false,
             "stroke_text_content": "",
+            "sticky_text": false,
+            "sticky_text_color": "#ffffff",
+            "mix_blend_mode": false,
+            "text_box_trim": false,
+            "enable_rotation": false,
+            "rotate": 0,
             "width": "fit-content",
             "unit": "percent",
             "custom_width": 100,
@@ -4313,6 +4744,7 @@
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "4.0rem",
+            "font_weight": "default",
             "line_height": "tight",
             "letter_spacing": "tight",
             "case": "uppercase",
@@ -4320,6 +4752,7 @@
             "color": "var(--color-foreground)",
             "background": false,
             "background_color": "#00000026",
+            "background_gradient": "",
             "enable_border": false,
             "enable_border_bottom": false,
             "border": "none",
@@ -4352,6 +4785,7 @@
             "link": "",
             "open_in_new_tab": false,
             "width": 40,
+            "width_mb": 30,
             "animation_type": "none"
           },
           "blocks": {}
@@ -4361,6 +4795,7 @@
         "text_ieAa8P",
         "icon_CAe8n4"
       ],
+      "disabled": true,
       "name": "t:names.marquee",
       "settings": {
         "movement_direction": "reverse",
@@ -4376,8 +4811,7 @@
         "speed": 20,
         "padding-block-start": 45,
         "padding-block-end": 40
-      },
-      "disabled": true
+      }
     },
     "media_gallery_d6yh4R": {
       "type": "media-gallery",
@@ -4475,6 +4909,8 @@
             "loop": false,
             "navigation": "arrows",
             "pagination_type": "bullets",
+            "always_show_swiper_button": false,
+            "show_fraction_on_arrow": false,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": false,
@@ -4505,12 +4941,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -4526,6 +4962,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -4575,6 +5012,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -4582,6 +5021,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -4592,6 +5032,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -4616,6 +5062,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -4623,6 +5070,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -4657,12 +5105,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -4678,6 +5126,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -4727,6 +5176,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -4734,6 +5185,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -4744,6 +5196,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -4768,6 +5226,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -4775,6 +5234,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -4809,12 +5269,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -4830,6 +5290,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -4879,6 +5340,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -4886,6 +5349,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -4896,6 +5360,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -4920,6 +5390,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -4927,6 +5398,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -4961,12 +5433,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -4982,6 +5454,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5031,6 +5504,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5038,6 +5513,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5048,6 +5524,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5072,6 +5554,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5079,6 +5562,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5113,12 +5597,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5134,6 +5618,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5183,6 +5668,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5190,6 +5677,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5200,6 +5688,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5224,6 +5718,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5231,6 +5726,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5265,12 +5761,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5286,6 +5782,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5335,6 +5832,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5342,6 +5841,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5352,6 +5852,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5376,6 +5882,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5383,6 +5890,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5417,12 +5925,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5438,6 +5946,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5487,6 +5996,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5494,6 +6005,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5504,6 +6016,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5528,6 +6046,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5535,6 +6054,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5569,12 +6089,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5590,6 +6110,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5639,6 +6160,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5646,6 +6169,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5656,6 +6180,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5680,6 +6210,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5687,6 +6218,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5721,12 +6253,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5742,6 +6274,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5791,6 +6324,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5798,6 +6333,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5808,6 +6344,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5832,6 +6374,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5839,6 +6382,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -5873,12 +6417,12 @@
               "settings": {
                 "background_media": "image",
                 "video_position": "cover",
-                "background_image": "",
                 "background_image_position": "cover",
                 "link": "",
                 "background_color": "#00312d",
                 "hide_on_mobile": false,
                 "enable_typing_content": false,
+                "show_large_image": false,
                 "image_ratio": "adapt",
                 "width": "custom",
                 "custom_width": 100,
@@ -5894,6 +6438,7 @@
                 "icon": "none",
                 "icon_custom": "svg",
                 "svg_upload": "",
+                "icon_text": "",
                 "icon_link": "",
                 "icon_open_in_new_tab": false,
                 "icon_button_bg_color": "#ffffff",
@@ -5943,6 +6488,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "text": "<p>Terracotta Structured Pantsuit</p>",
+                        "collection_description_only": false,
+                        "collapse_text": false,
                         "typing_text": false,
                         "primary_text": "Welcome to our store!",
                         "secondary_text": "Exclusive offers just for you.",
@@ -5950,6 +6497,7 @@
                         "highlight_text": false,
                         "highlight_text_content": "",
                         "highlight_text_type": "text",
+                        "underline_width": 100,
                         "underline_height": 18,
                         "underline_offset": -20,
                         "highlight_text_color": "#000000",
@@ -5960,6 +6508,12 @@
                         "spacing_text_right": 0,
                         "stroke_text": false,
                         "stroke_text_content": "",
+                        "sticky_text": false,
+                        "sticky_text_color": "#ffffff",
+                        "mix_blend_mode": false,
+                        "text_box_trim": false,
+                        "enable_rotation": false,
+                        "rotate": 0,
                         "width": "fit-content",
                         "unit": "percent",
                         "custom_width": 100,
@@ -5984,6 +6538,7 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "2.0rem",
+                        "font_weight": "default",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -5991,6 +6546,7 @@
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
+                        "background_gradient": "",
                         "enable_border": false,
                         "enable_border_bottom": false,
                         "border": "none",
@@ -6034,6 +6590,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Media gallery",
       "settings": {
         "content_direction": "column",
@@ -6061,8 +6618,7 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 80
-      },
-      "disabled": true
+      }
     },
     "marquee_FQpNFr": {
       "type": "marquee",
@@ -6074,7 +6630,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6089,7 +6644,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6104,7 +6658,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6119,7 +6672,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6134,7 +6686,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6149,7 +6700,6 @@
             "icon": "price_tag",
             "icon_custom": "image",
             "svg_upload": "",
-            "image_upload": "",
             "link": "",
             "open_in_new_tab": false,
             "width": 315,
@@ -6166,6 +6716,7 @@
         "large_icon_PNfp9J",
         "large_icon_z4d6JH"
       ],
+      "disabled": true,
       "name": "t:names.marquee",
       "settings": {
         "movement_direction": "reverse",
@@ -6181,163 +6732,6 @@
         "speed": 20,
         "padding-block-start": 24,
         "padding-block-end": 24
-      },
-      "disabled": true
-    },
-    "hero_redy_main": {
-      "type": "hero-redy",
-      "settings": {}
-    },
-    "statement_redy_main": {
-      "type": "statement-quote",
-      "settings": {}
-    },
-    "box_contents_main": {
-      "type": "box-contents",
-      "blocks": {
-        "card_1": {
-          "type": "card",
-          "settings": {
-            "num": "01 / Сърцевината",
-            "title": "Брошура „Когато тялото ти пораства“",
-            "text": "Малък наръчник, написан с разбиране, не с медицински жаргон. Отговаря на въпросите, които я плашат най-много — преди тя да е намерила сили да ги зададе.",
-            "style": "feat"
-          }
-        },
-        "card_2": {
-          "type": "card",
-          "settings": {
-            "num": "02",
-            "title": "Био превръзки",
-            "text": "Конопени, дишащи, без хлор и аромати. Дневни и нощни — два размера за първите дни.",
-            "style": "default"
-          }
-        },
-        "card_3": {
-          "type": "card",
-          "settings": {
-            "num": "03",
-            "title": "Несесер",
-            "text": "Дискретен, мек, който се събира в раницата. Без надписи, които я карат да крие.",
-            "style": "cream"
-          }
-        },
-        "card_4": {
-          "type": "card",
-          "settings": {
-            "num": "04",
-            "title": "Картичка",
-            "text": "„Ти си Redy.“ Лично писмо от майка, към момиче. Може да го запази. Може да го забрави. И двете са окей.",
-            "style": "peach"
-          }
-        },
-        "card_5": {
-          "type": "card",
-          "settings": {
-            "num": "05",
-            "title": "Топъл чай",
-            "text": "Малък пакет — уютен символ. Защото първият цикъл иска не само хигиена, а и грижа.",
-            "style": "lavender"
-          }
-        },
-        "card_6": {
-          "type": "card",
-          "settings": {
-            "num": "06 / Бонус",
-            "title": "Наръчник за родителя",
-            "text": "Какво да кажем. Какво да избягваме. Кои фрази остават в паметта. Защото нашата реакция я води цял живот.",
-            "style": "dark"
-          }
-        },
-        "card_7": {
-          "type": "card",
-          "settings": {
-            "num": "07",
-            "title": "QR код към ресурси",
-            "text": "Видеа, въпроси и отговори, контакти на специалисти — обновявани онлайн. Без очаквания да знае всичко веднага.",
-            "style": "default"
-          }
-        }
-      },
-      "block_order": [
-        "card_1",
-        "card_2",
-        "card_3",
-        "card_4",
-        "card_5",
-        "card_6",
-        "card_7"
-      ],
-      "settings": {}
-    },
-    "founder_story_main": {
-      "type": "founder-story",
-      "settings": {}
-    },
-    "donation_cta_main": {
-      "type": "donation-cta",
-      "settings": {}
-    },
-    "faq_redy_main": {
-      "type": "faq-redy",
-      "blocks": {
-        "faq_1": {
-          "type": "faq",
-          "settings": {
-            "question": "На каква възраст е подходяща кутията?",
-            "answer": "За момичета между 9 и 13 години — но няма правило. Подаряваме я около 9–10 г. възраст, за да е готова преди да я изненада. Тонът е премерен — не плаши малките, не звучи детски на по-големите."
-          }
-        },
-        "faq_2": {
-          "type": "faq",
-          "settings": {
-            "question": "Подходяща ли е, ако тя още няма цикъл?",
-            "answer": "Точно затова е създадена. Кутията се отваря преди първата менструация — за подготовка. Така моментът, когато дойде, не е изненада, а нещо познато."
-          }
-        },
-        "faq_3": {
-          "type": "faq",
-          "settings": {
-            "question": "Защо био превръзки?",
-            "answer": "Конопените био превръзки нямат хлор, аромати и синтетични влакна. Дишат. По-добри са за чувствителна кожа и за околната среда. Първото докосване с този продукт има значение."
-          }
-        },
-        "faq_4": {
-          "type": "faq",
-          "settings": {
-            "question": "Какво включва моделът „купи една — даряваш една“?",
-            "answer": "За всяка продадена кутия даряваме една на момиче без достъп — чрез партньорства с училища и социални служби. Прозрачен брой, ежемесечен отчет на сайта."
-          }
-        },
-        "faq_5": {
-          "type": "faq",
-          "settings": {
-            "question": "Доставка и връщане?",
-            "answer": "Доставка с Еконт за 1–2 работни дни в цяла България. Безплатна над 60 лв. Връщане в 14 дни, ако кутията е неразопакована."
-          }
-        },
-        "faq_6": {
-          "type": "faq",
-          "settings": {
-            "question": "Може ли подарък за рожден ден / кръщелница?",
-            "answer": "Да — много майки и кръстници избират Redy точно за такъв повод. Имаме опция за лично послание на картичката."
-          }
-        }
-      },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4",
-        "faq_5",
-        "faq_6"
-      ],
-      "settings": {
-        "tag": "Често",
-        "heading_line_1": "Въпроси,",
-        "heading_before_em": "които",
-        "heading_em": "чувам най-често.",
-        "contact_note": "Ако твоят го няма тук — пиши ми лично на hi@redy.one."
       }
     }
   },
