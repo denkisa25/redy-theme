@@ -1,4 +1,7 @@
 {%- assign product = section.settings.product -%}
+{%- assign redy_box = all_products['redy-one-box'] -%}
+{%- assign cta_target = section.settings.cta_url | default: redy_box.url -%}
+{%- assign ghost_target = section.settings.ghost_url | default: '#redy-founder' -%}
 
 <section class="redy-hero" id="hero">
 
@@ -21,11 +24,11 @@
     <p class="redy-hero__lead">{{ section.settings.lead }}</p>
 
     <div class="redy-hero__actions">
-      <a href="{{ section.settings.cta_url }}" class="redy-btn redy-btn--primary">
+      <a href="{{ cta_target }}" class="redy-btn redy-btn--primary">
         {{ section.settings.cta_label }}<span aria-hidden="true" class="redy-btn__arrow">→</span>
       </a>
       {%- if section.settings.ghost_label != blank -%}
-        <a href="{{ section.settings.ghost_url }}" class="redy-btn redy-btn--ghost">
+        <a href="{{ ghost_target }}" class="redy-btn redy-btn--ghost">
           {{ section.settings.ghost_label }}
         </a>
       {%- endif -%}

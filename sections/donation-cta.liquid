@@ -1,3 +1,5 @@
+{%- assign redy_box = all_products['redy-one-box'] -%}
+{%- assign cta_target = section.settings.cta_url | default: redy_box.url -%}
 <section class="redy-donation">
   <div class="redy-donation__blob redy-donation__blob--1"></div>
   <div class="redy-donation__blob redy-donation__blob--2"></div>
@@ -8,7 +10,7 @@
       {{ section.settings.heading_line_2_prefix }}&nbsp;<em>{{ section.settings.heading_line_2_em }}</em>
     </h2>
     <p>{{ section.settings.body }}</p>
-    <a href="{{ section.settings.cta_url }}" class="redy-btn redy-btn--light">
+    <a href="{{ cta_target }}" class="redy-btn redy-btn--light">
       {{ section.settings.cta_label }}<span aria-hidden="true" class="redy-btn__arrow">→</span>
     </a>
   </div>
