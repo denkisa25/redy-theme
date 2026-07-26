@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "legal": {
+      "type": "legal-content",
+      "settings": {}
+    }
+  },
+  "order": ["legal"]
+}

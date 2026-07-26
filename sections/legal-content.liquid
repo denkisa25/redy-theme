@@ -1,0 +1,41 @@
+<section class="redy-legal">
+  <div class="redy-legal__inner">
+    <header class="redy-legal__head">
+      {%- if section.settings.eyebrow != blank -%}
+        <div class="redy-section-tag">{{ section.settings.eyebrow }}</div>
+      {%- endif -%}
+      <h1 class="redy-legal__title">{{ page.title }}</h1>
+      {%- if section.settings.show_updated and page.metafields.custom.updated != blank -%}
+        <p class="redy-legal__updated">{{ section.settings.updated_label }} {{ page.metafields.custom.updated }}</p>
+      {%- endif -%}
+    </header>
+
+    <div class="redy-legal__body rte">
+      {{ page.content }}
+    </div>
+
+    {%- if section.settings.show_contact -%}
+      <div class="redy-legal__contact">
+        {{ section.settings.contact_text }}
+        <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Legal content",
+  "tag": "section",
+  "class": "redy-legal-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Правна информация" },
+    { "type": "checkbox", "id": "show_updated", "label": "Show last-updated line", "default": false },
+    { "type": "text", "id": "updated_label", "label": "Updated label", "default": "Последна редакция:" },
+    { "type": "checkbox", "id": "show_contact", "label": "Show contact footer", "default": true },
+    { "type": "textarea", "id": "contact_text", "label": "Contact text", "default": "Въпроси по този документ? Пиши ни на " },
+    { "type": "text", "id": "email", "label": "Email address", "default": "hi@redy.one" }
+  ],
+  "presets": [{ "name": "Legal content" }]
+}
+{% endschema %}
