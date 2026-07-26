@@ -1,5 +1,29 @@
 # Redy — Build Progress
 
+## Phase 6 — QA pass in browser (2026-07-26)
+
+Ran `shopify theme dev` against m0jpm3-db and walked the live preview (desktop + mobile) with Chrome DevTools.
+
+### Fixed
+- **Popups disabled**: `promotion-popup` (English "New arrivals" / STYLE20 code) and `before-you-leave` in `popup-group.json` — were covering the hero.
+- **Footer reskinned** (`footer-group.json`): Bulgarian newsletter ("ОСТАНИ СВЪРЗАНА"), real contact (hi@redy.one, София България), "Redy" wordmark, removed Ella 7 / Halothemes / Powered-by-Shopify credit, dropped empty SHOP/ABOUT/HELP menus + fake SF address/phone. Footer group applies site-wide (verified on contact + collection pages).
+- **Fake socials cleared**: `social_*_link` in `settings_data.json` were pointing at shopify.com accounts.
+- **Wishlist + compare disabled** (`enable_wishlist`/`enable_compare`/price variants → false) — removes header wishlist widget everywhere.
+- **Floating widgets** trimmed to back-to-top only (dropped recently-viewed + social); recolored back-to-top teal → brand red.
+- **Mobile toolbar** simplified to Начало/Търси/Кошница (dropped account + wishlist tabs).
+- **Mobile hero blobs**: were sitting behind the heading/body/CTA and hiding the red "тя е Redy" script. Shrunk to corner accents, dropped opacity, hid the five overlapping ones (`redy-tokens.css`).
+- **Nav "Поръчай" pill** was clipping off the compact mobile header — hidden below 1023px (hero CTA + bottom cart cover it there).
+
+### Shopify gotcha (learned)
+Every block listed in a section's `blocks` map MUST also appear in `block_order`, or `theme dev` rejects the upload ("block with id X must be present in block_order"). To remove a block, delete the block object outright — do not just drop it from `block_order`. `static: true` blocks are the exception (they live outside `block_order`).
+
+### Still open (needs you / product)
+- **No product exists** in the store (`products.json` empty). Every "Поръчай"/catalog link routes to an empty `/collections/all`. Create the 49 лв "Първата кутия" product in Admin → then wire hero `cta_url`/`ghost_url` + nav CTA to it. **Hard blocker for the buy flow.**
+- **Contact page** (`page.contact.json`): 100% stock Ella English (CONTACT US furniture copy, English form, Live Help email@domain.com + 685 Market Street, "find a Ella store"). Needs Bulgarian rebuild or removal from nav.
+- **Catalog page** (`collection.json`): stock Ella lake-illustration banner + English chrome. For a single-product store the nav should point straight to the product, not a collection listing.
+- **Legal pages**: GDPR / privacy / terms / returns — not built.
+- **SEO/OG**: store name + OG image still to set in Admin.
+
 ## Phase 5 — Product page (2026-05-07)
 
 ### Changed
