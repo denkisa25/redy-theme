@@ -1,0 +1,101 @@
+<section class="redy-contact">
+  <div class="redy-contact__blob redy-contact__blob--1"></div>
+  <div class="redy-contact__blob redy-contact__blob--2"></div>
+
+  <div class="redy-contact__inner">
+    <header class="redy-contact__head">
+      <div class="redy-section-tag">{{ section.settings.eyebrow }}</div>
+      <h1 class="redy-contact__title">
+        {{ section.settings.heading_before }}&nbsp;<em>{{ section.settings.heading_em }}</em>
+      </h1>
+      <p class="redy-contact__lead">{{ section.settings.lead }}</p>
+    </header>
+
+    <div class="redy-contact__grid">
+      <div class="redy-contact__form-wrap">
+        {%- assign post = false -%}
+        {%- if form.posted_successfully? -%}{%- assign post = true -%}{%- endif -%}
+
+        {%- if post -%}
+          <div class="redy-contact__success" role="status">
+            {{ section.settings.success_text }}
+          </div>
+        {%- endif -%}
+
+        {% form 'contact', class: 'redy-contact__form' %}
+          {%- if form.errors -%}
+            <div class="redy-contact__errors" role="alert">
+              {{ form.errors | default_errors }}
+            </div>
+          {%- endif -%}
+
+          <label class="redy-contact__label" for="ContactName">{{ section.settings.label_name }}</label>
+          <input
+            type="text"
+            id="ContactName"
+            name="contact[name]"
+            class="redy-contact__input"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            autocomplete="name"
+          >
+
+          <label class="redy-contact__label" for="ContactEmail">{{ section.settings.label_email }}</label>
+          <input
+            type="email"
+            id="ContactEmail"
+            name="contact[email]"
+            class="redy-contact__input"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            autocomplete="email"
+            required
+          >
+
+          <label class="redy-contact__label" for="ContactBody">{{ section.settings.label_message }}</label>
+          <textarea
+            id="ContactBody"
+            name="contact[body]"
+            rows="6"
+            class="redy-contact__input redy-contact__textarea"
+          >{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+          <button type="submit" class="redy-btn redy-btn--primary redy-contact__submit">
+            {{ section.settings.submit_label }}<span aria-hidden="true" class="redy-btn__arrow">→</span>
+          </button>
+        {% endform %}
+      </div>
+
+      <aside class="redy-contact__info">
+        <h2 class="redy-contact__info-title">{{ section.settings.info_title }}</h2>
+        <p class="redy-contact__info-body">{{ section.settings.info_body }}</p>
+        <a class="redy-contact__email" href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+        {%- if section.settings.location != blank -%}
+          <div class="redy-contact__location">{{ section.settings.location }}</div>
+        {%- endif -%}
+      </aside>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact Redy",
+  "tag": "section",
+  "class": "redy-contact-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Пиши ни" },
+    { "type": "text", "id": "heading_before", "label": "Heading — first part", "default": "Насреща сме, когато" },
+    { "type": "text", "id": "heading_em", "label": "Heading — italic part", "default": "имаш въпрос." },
+    { "type": "textarea", "id": "lead", "label": "Lead paragraph", "default": "Няма глупави въпроси — само майки, които искат да са подготвени. Пиши ни и ще ти отговорим лично, спокойно и без бързане." },
+    { "type": "text", "id": "label_name", "label": "Name label", "default": "Твоето име" },
+    { "type": "text", "id": "label_email", "label": "Email label", "default": "Имейл адрес" },
+    { "type": "text", "id": "label_message", "label": "Message label", "default": "Съобщение" },
+    { "type": "text", "id": "submit_label", "label": "Submit label", "default": "Изпрати" },
+    { "type": "textarea", "id": "success_text", "label": "Success message", "default": "Благодарим ти! Получихме съобщението и ще ти отговорим възможно най-скоро." },
+    { "type": "text", "id": "info_title", "label": "Info title", "default": "Или ни пиши директно" },
+    { "type": "textarea", "id": "info_body", "label": "Info body", "default": "Отговаряме обикновено в рамките на един работен ден." },
+    { "type": "text", "id": "email", "label": "Email address", "default": "hi@redy.one" },
+    { "type": "text", "id": "location", "label": "Location line", "default": "София, България" }
+  ],
+  "presets": [{ "name": "Contact Redy" }]
+}
+{% endschema %}
