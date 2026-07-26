@@ -1,5 +1,15 @@
 # Redy — Build Progress
 
+## Phase 6 — Contact + legal pages (2026-07-26)
+
+### Contact page (rebuilt)
+- `sections/contact-redy.liquid` + minimal `templates/page.contact.json` replace the stock Ella contact page. Bulgarian intro, native Shopify contact form, hi@redy.one info card. Verified desktop + mobile.
+
+### Legal pages (template + drafts)
+- `sections/legal-content.liquid` + `templates/page.legal.json` — brand-styled template that renders a page's title + rich-text body. Styles in `redy-tokens.css`.
+- `reference/redy-legal-drafts-bg.md` — Bulgarian drafts for Privacy/GDPR, Terms, Returns, Cookies (with `[placeholders]` + lawyer-review disclaimer).
+- **Admin still needed:** create the pages in Shopify (or Settings→Policies), paste the drafts, fill placeholders, assign the `legal` template, then link them from the footer.
+
 ## Phase 6 — QA pass in browser (2026-07-26)
 
 Ran `shopify theme dev` against m0jpm3-db and walked the live preview (desktop + mobile) with Chrome DevTools.
