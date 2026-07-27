@@ -1,0 +1,137 @@
+{%- liquid
+  assign items_left = 'item1,item2,item3' | split: ','
+  assign items_right = 'item4,item5,item6' | split: ','
+-%}
+
+<section class="redy-info">
+  <div class="redy-info__blob redy-info__blob--tl"></div>
+  <div class="redy-info__blob redy-info__blob--br"></div>
+
+  <div class="redy-info__inner">
+    <div class="redy-info__head">
+      <div>
+        <div class="redy-section-tag">{{ section.settings.tag }}</div>
+        <h2 class="redy-info__title">
+          {{ section.settings.heading_before }}<br>
+          <em>{{ section.settings.heading_em }}</em>
+        </h2>
+      </div>
+      <p class="redy-info__intro">{{ section.settings.intro }}</p>
+    </div>
+
+    <div class="redy-info__card">
+      <div class="redy-info__col redy-info__col--left">
+        {%- for key in items_left -%}
+          {%- assign icon_key = key | append: '_icon' -%}
+          {%- assign title_key = key | append: '_title' -%}
+          {%- assign text_key = key | append: '_text' -%}
+          <div class="redy-info__item">
+            <div class="redy-info__icon">
+              {%- render 'redy-info-icon', name: section.settings[icon_key] -%}
+            </div>
+            <div class="redy-info__item-text">
+              <h3>{{ section.settings[title_key] }}</h3>
+              <p>{{ section.settings[text_key] }}</p>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="redy-info__center">
+        <div class="redy-info__pill">{{ section.settings.center_pill }}</div>
+        <div class="redy-info__box" aria-hidden="true">
+          <svg viewBox="0 0 220 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <ellipse cx="110" cy="196" rx="70" ry="9" fill="#2A1418" opacity="0.08"/>
+            <!-- open lid flaps -->
+            <path d="M60 70 L110 90 L60 108 L28 92 Z" fill="#FFE4ED" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M160 70 L110 90 L160 108 L192 92 Z" fill="#FFE4ED" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+            <!-- box body -->
+            <path d="M60 88 H160 V178 H60 Z" fill="#FF8FB5" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+            <!-- tissue -->
+            <path d="M72 92 Q90 78 110 92 Q130 78 148 92 L148 104 Q110 96 72 104 Z" fill="#FFF5EE" stroke="#C8102E" stroke-width="1.5"/>
+            <!-- peeking card -->
+            <rect x="88" y="96" width="44" height="58" rx="5" fill="#FFFFFF" stroke="#C8102E" stroke-width="2" transform="rotate(-6 110 125)"/>
+            <text x="108" y="120" font-family="Georgia, serif" font-size="9" fill="#4A2A30" text-anchor="middle" transform="rotate(-6 108 120)">Ти си</text>
+            <text x="108" y="134" font-family="Georgia, serif" font-style="italic" font-size="13" font-weight="700" fill="#C8102E" text-anchor="middle" transform="rotate(-6 108 134)">Redy.</text>
+            <!-- badge -->
+            <circle cx="110" cy="162" r="20" fill="#FF8FB5" stroke="#C8102E" stroke-width="2"/>
+            <text x="110" y="167" font-family="Georgia, serif" font-style="italic" font-size="13" font-weight="700" fill="#9B0E22" text-anchor="middle">Redy</text>
+            <!-- scattered dots -->
+            <circle cx="46" cy="120" r="10" fill="#C8102E"/>
+            <circle cx="176" cy="118" r="8" fill="#FF8FB5"/>
+            <circle cx="52" cy="158" r="6" fill="#F5B384"/>
+            <circle cx="172" cy="156" r="7" fill="#B5A4D4"/>
+            <circle cx="166" cy="84" r="9" fill="#FF8FB5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="redy-info__col redy-info__col--right">
+        {%- for key in items_right -%}
+          {%- assign icon_key = key | append: '_icon' -%}
+          {%- assign title_key = key | append: '_title' -%}
+          {%- assign text_key = key | append: '_text' -%}
+          <div class="redy-info__item">
+            <div class="redy-info__icon">
+              {%- render 'redy-info-icon', name: section.settings[icon_key] -%}
+            </div>
+            <div class="redy-info__item-text">
+              <h3>{{ section.settings[title_key] }}</h3>
+              <p>{{ section.settings[text_key] }}</p>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if section.settings.bonus_text != blank -%}
+        <div class="redy-info__bonus">
+          <span class="redy-info__bonus-dot"></span>
+          <strong>+ {{ section.settings.bonus_prefix }}</strong> {{ section.settings.bonus_text }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Box Infographic",
+  "tag": "section",
+  "class": "redy-info-section",
+  "settings": [
+    { "type": "text", "id": "tag", "label": "Eyebrow", "default": "Кутията на Redy" },
+    { "type": "text", "id": "heading_before", "label": "Heading — first part", "default": "Седем неща, които правят" },
+    { "type": "text", "id": "heading_em", "label": "Heading — italic part", "default": "разликата." },
+    { "type": "textarea", "id": "intro", "label": "Intro paragraph", "default": "Всеки елемент е избран с грижа — за тялото, за момента, за разговора. Няма излишни играчки. Няма стикери. Само това, което тя наистина ще използва." },
+    { "type": "text", "id": "center_pill", "label": "Center pill label", "default": "Redy · Първата кутия" },
+    { "type": "header", "content": "Item 1 (top-left)" },
+    { "type": "select", "id": "item1_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "booklet" },
+    { "type": "text", "id": "item1_title", "label": "Title", "default": "Брошура" },
+    { "type": "textarea", "id": "item1_text", "label": "Text", "default": "„Когато тялото ти пораства“ — топъл наръчник без медицински жаргон" },
+    { "type": "header", "content": "Item 2 (mid-left)" },
+    { "type": "select", "id": "item2_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "pads" },
+    { "type": "text", "id": "item2_title", "label": "Title", "default": "Био превръзки" },
+    { "type": "textarea", "id": "item2_text", "label": "Text", "default": "Конопени, дишащи, без хлор. Дневни и нощни — два размера за първите дни" },
+    { "type": "header", "content": "Item 3 (bottom-left)" },
+    { "type": "select", "id": "item3_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "pouch" },
+    { "type": "text", "id": "item3_title", "label": "Title", "default": "Несесер" },
+    { "type": "textarea", "id": "item3_text", "label": "Text", "default": "Дискретен, мек. Без надписи, които я карат да крие" },
+    { "type": "header", "content": "Item 4 (top-right)" },
+    { "type": "select", "id": "item4_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "card" },
+    { "type": "text", "id": "item4_title", "label": "Title", "default": "Картичка" },
+    { "type": "textarea", "id": "item4_text", "label": "Text", "default": "„Ти си Redy.“ Лично писмо. Може да го запази. Може да го забрави. И двете са окей" },
+    { "type": "header", "content": "Item 5 (mid-right)" },
+    { "type": "select", "id": "item5_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "tea" },
+    { "type": "text", "id": "item5_title", "label": "Title", "default": "Топъл чай" },
+    { "type": "textarea", "id": "item5_text", "label": "Text", "default": "Малък пакет — уютен символ. Грижа, не само хигиена" },
+    { "type": "header", "content": "Item 6 (bottom-right)" },
+    { "type": "select", "id": "item6_icon", "label": "Icon", "options": [{"value":"booklet","label":"Booklet"},{"value":"pads","label":"Pads"},{"value":"pouch","label":"Pouch"},{"value":"card","label":"Card"},{"value":"tea","label":"Tea"},{"value":"guide","label":"Guide"}], "default": "guide" },
+    { "type": "text", "id": "item6_title", "label": "Title", "default": "Наръчник за родителя" },
+    { "type": "textarea", "id": "item6_text", "label": "Text", "default": "Какво да кажем. Какво да избягваме. Кои фрази остават" },
+    { "type": "header", "content": "Bonus strip" },
+    { "type": "text", "id": "bonus_prefix", "label": "Bonus prefix (bold)", "default": "Бонус: QR код" },
+    { "type": "text", "id": "bonus_text", "label": "Bonus text", "default": "към онлайн ресурси — видеа, въпроси, специалисти" }
+  ],
+  "presets": [{ "name": "Box Infographic" }]
+}
+{% endschema %}

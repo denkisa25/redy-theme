@@ -1,0 +1,48 @@
+{%- comment -%} Renders one Redy infographic line-icon. Param: name {%- endcomment -%}
+{%- case name -%}
+  {%- when 'booklet' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="9" y="8" width="30" height="32" rx="3" stroke="#C8102E" stroke-width="2.4"/>
+      <line x1="24" y1="8" x2="24" y2="40" stroke="#C8102E" stroke-width="2.4"/>
+      <line x1="14" y1="16" x2="20" y2="16" stroke="#FF8FB5" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="14" y1="22" x2="20" y2="22" stroke="#FF8FB5" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="31" cy="30" r="2.4" fill="#C8102E"/>
+    </svg>
+  {%- when 'pads' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="12" width="28" height="7" rx="3.5" stroke="#C8102E" stroke-width="2.4"/>
+      <rect x="10" y="21" width="28" height="7" rx="3.5" stroke="#C8102E" stroke-width="2.4"/>
+      <rect x="10" y="30" width="28" height="7" rx="3.5" stroke="#C8102E" stroke-width="2.4"/>
+      <circle cx="33" cy="15.5" r="1.6" fill="#FF8FB5"/>
+    </svg>
+  {%- when 'pouch' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 18 h20 a3 3 0 0 1 3 3 v16 a3 3 0 0 1 -3 3 h-20 a3 3 0 0 1 -3 -3 v-16 a3 3 0 0 1 3 -3 Z" stroke="#C8102E" stroke-width="2.4"/>
+      <path d="M18 18 v-2 a6 6 0 0 1 12 0 v2" stroke="#C8102E" stroke-width="2.4"/>
+      <text x="24" y="34" font-family="Georgia, serif" font-style="italic" font-size="11" font-weight="700" fill="#C8102E" text-anchor="middle">R</text>
+    </svg>
+  {%- when 'card' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="12" y="9" width="24" height="30" rx="3" stroke="#C8102E" stroke-width="2.4"/>
+      <text x="24" y="23" font-family="Georgia, serif" font-size="7" fill="#4A2A30" text-anchor="middle">Ти си</text>
+      <text x="24" y="33" font-family="Georgia, serif" font-style="italic" font-size="10" font-weight="700" fill="#C8102E" text-anchor="middle">Redy.</text>
+    </svg>
+  {%- when 'tea' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 20 h16 l-2 18 a2 2 0 0 1 -2 2 h-8 a2 2 0 0 1 -2 -2 Z" stroke="#C8102E" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M24 20 v-7" stroke="#C8102E" stroke-width="2.4"/>
+      <rect x="20" y="7" width="8" height="6" rx="1.5" stroke="#C8102E" stroke-width="2.2"/>
+      <text x="24" y="33" font-family="Georgia, serif" font-size="8" fill="#C8102E" text-anchor="middle">чай</text>
+    </svg>
+  {%- when 'guide' -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 8 h17 l6 6 v26 a0 0 0 0 1 0 0 h-23 Z" stroke="#C8102E" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M30 8 v6 h6" stroke="#C8102E" stroke-width="2.4" stroke-linejoin="round"/>
+      <line x1="18" y1="24" x2="31" y2="24" stroke="#FF8FB5" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="18" y1="30" x2="31" y2="30" stroke="#FF8FB5" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+  {%- else -%}
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="14" stroke="#C8102E" stroke-width="2.4"/>
+    </svg>
+{%- endcase -%}
