@@ -38,6 +38,25 @@
   gap: 10px;
 }
 
+.redy-logo-svg {
+  width: 56px;
+  aspect-ratio: 1935 / 1788;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.redy-logo-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 749px) {
+  .redy-logo-svg {
+    width: 46px;
+  }
+}
+
 .redy-mark {
   width: 40px;
   height: 40px;

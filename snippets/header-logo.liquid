@@ -79,10 +79,7 @@
     <div class="header__heading-logo-wrapper w-full inline-block relative{% if main_logo == blank and main_logo_svg == blank %} no-logo{% endif %}" style="{{ logo_style }}">
       {%- capture text_fallback -%}
         <span class="redy-logo-mark">
-          <span class="redy-mark">
-            <span class="redy-mark__dot"></span>
-            <span class="redy-mark__text">Redy</span>
-          </span>
+          <span class="redy-logo-svg">{% render 'redy-logo-mark' %}</span>
           <span class="redy-domain">redy.one</span>
         </span>
       {%- endcapture -%}
