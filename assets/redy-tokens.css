@@ -39,7 +39,7 @@
 }
 
 .redy-logo-svg {
-  width: 56px;
+  width: 44px;
   aspect-ratio: 1935 / 1788;
   display: inline-flex;
   flex-shrink: 0;
@@ -53,7 +53,7 @@
 
 @media (max-width: 749px) {
   .redy-logo-svg {
-    width: 46px;
+    width: 34px;
   }
 }
 
