@@ -222,7 +222,7 @@
       ],
       "name": "Header - Default",
       "settings": {
-        "gap": 12,
+        "gap": 13,
         "align_items": "start",
         "logo_width": 125,
         "logo_width_mobile": 70,
