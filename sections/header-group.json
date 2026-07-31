@@ -224,7 +224,7 @@
       "settings": {
         "gap": 12,
         "align_items": "start",
-        "logo_width": 285,
+        "logo_width": 125,
         "logo_width_mobile": 110,
         "logo_spacing_left": 0,
         "logo_spacing_right": 0,
