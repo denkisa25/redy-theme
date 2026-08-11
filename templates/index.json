@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_redy_main": {
@@ -7,7 +16,7 @@
         "heading_before": "Когато моментът дойде,",
         "heading_em": "тя е",
         "heading_script": "Redy.",
-        "lead": "Първата кутия за първия цикъл — внимателно подбрана, нежно обяснена, спокойно поднесена. За да започне разговорът, който ще я води дълго след това.",
+        "lead": "Първата кутия за първия менструален цикъл — внимателно подбрана, нежно обяснена, спокойно поднесена. За да започне разговорът, който ще я води дълго след това.",
         "cta_label": "Поръчай за 49 лв",
         "cta_url": "",
         "ghost_label": "Защо я създадох",
@@ -23,7 +32,7 @@
         "card_tag": "Серия 01 · Limited",
         "card_name_before": "Първата",
         "card_name_em": "кутия",
-        "card_meta": "Ръчно опакована\nв София"
+        "card_meta": "Ръчно опакованав София"
       }
     },
     "statement_redy_main": {
@@ -117,6 +126,36 @@
         "heading_line_1": "Всичко, което трябва.",
         "heading_line_2": "Нищо, което плаши.",
         "subheading": "Кутията е малка вселена от грижа — практичните неща са там, но емоционалните също. Защото тя ще има нужда и от двете."
+      }
+    },
+    "box_infographic_main": {
+      "type": "box-infographic",
+      "settings": {
+        "tag": "Кутията на Redy",
+        "heading_before": "Седем неща, които правят",
+        "heading_em": "разликата.",
+        "intro": "Всеки елемент е избран с грижа — за тялото, за момента, за разговора. Няма излишни играчки. Няма стикери. Само това, което тя наистина ще използва.",
+        "center_pill": "Redy · Първата кутия",
+        "item1_icon": "booklet",
+        "item1_title": "Брошура",
+        "item1_text": "„Когато тялото ти пораства“ — топъл наръчник без медицински жаргон",
+        "item2_icon": "pads",
+        "item2_title": "Био превръзки",
+        "item2_text": "Конопени, дишащи, без хлор. Дневни и нощни — два размера за първите дни",
+        "item3_icon": "pouch",
+        "item3_title": "Несесер",
+        "item3_text": "Дискретен, мек. Без надписи, които я карат да крие",
+        "item4_icon": "card",
+        "item4_title": "Картичка",
+        "item4_text": "„Ти си Redy.“ Лично писмо. Може да го запази. Може да го забрави. И двете са окей",
+        "item5_icon": "tea",
+        "item5_title": "Топъл чай",
+        "item5_text": "Малък пакет — уютен символ. Грижа, не само хигиена",
+        "item6_icon": "guide",
+        "item6_title": "Наръчник за родителя",
+        "item6_text": "Какво да кажем. Какво да избягваме. Кои фрази остават",
+        "bonus_prefix": "Бонус: QR код",
+        "bonus_text": "към онлайн ресурси — видеа, въпроси, специалисти"
       }
     },
     "founder_story_main": {
@@ -6724,10 +6763,6 @@
         "padding-block-start": 24,
         "padding-block-end": 24
       }
-    },
-    "box_infographic_main": {
-      "type": "box-infographic",
-      "settings": {}
     }
   },
   "order": [
